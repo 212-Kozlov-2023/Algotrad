@@ -1,0 +1,31 @@
+Python bindings are available as wheels on \href{https://pypi.org/project/google-benchmark/}{\texttt{ Py\+PI}} for importing and using Google Benchmark directly in Python. Currently, pre-\/built wheels exist for mac\+OS (both ARM64 and Intel x86), Linux x86-\/64 and 64-\/bit Windows. Supported Python versions are Python 3.\+7 -\/ 3.\+10.
+
+To install Google Benchmark\textquotesingle{}s Python bindings, run\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python -\/m pip install -\/-\/upgrade pip  \# for manylinux2014 support}
+\DoxyCodeLine{python -\/m pip install google-\/benchmark}
+
+\end{DoxyCode}
+
+
+In order to keep your system Python interpreter clean, it is advisable to run these commands in a virtual environment. See the \href{https://docs.python.org/3/library/venv.html}{\texttt{ official Python documentation}} on how to create virtual environments.
+
+To build a wheel directly from source, you can follow these steps\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone https://github.com/google/benchmark.git}
+\DoxyCodeLine{cd benchmark}
+\DoxyCodeLine{\# create a virtual environment and activate it}
+\DoxyCodeLine{python3 -\/m venv venv -\/-\/system-\/site-\/packages}
+\DoxyCodeLine{source venv/bin/activate  \# .\(\backslash\)venv\(\backslash\)Scripts\(\backslash\)Activate.ps1 on Windows}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# upgrade Python's system-\/wide packages}
+\DoxyCodeLine{python -\/m pip install -\/-\/upgrade pip setuptools wheel}
+\DoxyCodeLine{\# builds the wheel and stores it in the directory "{}wheelhouse"{}.}
+\DoxyCodeLine{python -\/m pip wheel . -\/w wheelhouse}
+
+\end{DoxyCode}
+
+
+NB\+: Building wheels from source requires Bazel. For platform-\/specific instructions on how to install Bazel, refer to the \href{https://bazel.build/install}{\texttt{ Bazel installation docs}}. 

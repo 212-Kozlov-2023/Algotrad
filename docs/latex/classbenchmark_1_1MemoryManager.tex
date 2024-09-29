@@ -1,0 +1,74 @@
+\hypertarget{classbenchmark_1_1MemoryManager}{}\doxysection{benchmark\+::Memory\+Manager Class Reference}
+\label{classbenchmark_1_1MemoryManager}\index{benchmark::MemoryManager@{benchmark::MemoryManager}}
+
+
+{\ttfamily \#include $<$benchmark.\+h$>$}
+
+
+
+Inheritance diagram for benchmark\+::Memory\+Manager\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1MemoryManager_1_1Result}{Result}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classbenchmark_1_1MemoryManager_af4b54ce0a9ae45defd9cdf45a92586b6}{$\sim$\+Memory\+Manager}} ()
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1MemoryManager_ab27e9e932f9e9293dd962e0e4a5a8b56}{Start}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1MemoryManager_a5fdc429934054e1d67987e10c1a294c5}{Stop}} (\mbox{\hyperlink{structbenchmark_1_1MemoryManager_1_1Result}{Result}} \&result)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int64\+\_\+t \mbox{\hyperlink{classbenchmark_1_1MemoryManager_a1a1a8dc5c90d5f964fe4c3cf0e2025e3}{Tombstone\+Value}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1MemoryManager_af4b54ce0a9ae45defd9cdf45a92586b6}\label{classbenchmark_1_1MemoryManager_af4b54ce0a9ae45defd9cdf45a92586b6}} 
+\index{benchmark::MemoryManager@{benchmark::MemoryManager}!````~MemoryManager@{$\sim$MemoryManager}}
+\index{````~MemoryManager@{$\sim$MemoryManager}!benchmark::MemoryManager@{benchmark::MemoryManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$MemoryManager()}{~MemoryManager()}}
+{\footnotesize\ttfamily virtual benchmark\+::\+Memory\+Manager\+::$\sim$\+Memory\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1MemoryManager_ab27e9e932f9e9293dd962e0e4a5a8b56}\label{classbenchmark_1_1MemoryManager_ab27e9e932f9e9293dd962e0e4a5a8b56}} 
+\index{benchmark::MemoryManager@{benchmark::MemoryManager}!Start@{Start}}
+\index{Start@{Start}!benchmark::MemoryManager@{benchmark::MemoryManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily virtual void benchmark\+::\+Memory\+Manager\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1MemoryManager_a5fdc429934054e1d67987e10c1a294c5}\label{classbenchmark_1_1MemoryManager_a5fdc429934054e1d67987e10c1a294c5}} 
+\index{benchmark::MemoryManager@{benchmark::MemoryManager}!Stop@{Stop}}
+\index{Stop@{Stop}!benchmark::MemoryManager@{benchmark::MemoryManager}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily virtual void benchmark\+::\+Memory\+Manager\+::\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbenchmark_1_1MemoryManager_1_1Result}{Result}} \&}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1MemoryManager_a1a1a8dc5c90d5f964fe4c3cf0e2025e3}\label{classbenchmark_1_1MemoryManager_a1a1a8dc5c90d5f964fe4c3cf0e2025e3}} 
+\index{benchmark::MemoryManager@{benchmark::MemoryManager}!TombstoneValue@{TombstoneValue}}
+\index{TombstoneValue@{TombstoneValue}!benchmark::MemoryManager@{benchmark::MemoryManager}}
+\doxysubsubsection{\texorpdfstring{TombstoneValue}{TombstoneValue}}
+{\footnotesize\ttfamily const int64\+\_\+t benchmark\+::\+Memory\+Manager\+::\+Tombstone\+Value\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    std::numeric\_limits<int64\_t>::max()}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/\mbox{\hyperlink{benchmark_8h}{benchmark.\+h}}\item 
+build/\+\_\+deps/googlebenchmark-\/src/src/\mbox{\hyperlink{json__reporter_8cc}{json\+\_\+reporter.\+cc}}\end{DoxyCompactItemize}

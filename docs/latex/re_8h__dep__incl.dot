@@ -1,0 +1,40 @@
+digraph "build/_deps/googlebenchmark-src/src/re.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="build/_deps/googlebenchmark\l-src/src/re.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="build/_deps/googlebenchmark\l-src/src/benchmark.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$src_2benchmark_8cc.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="build/_deps/googlebenchmark\l-src/src/benchmark_register.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$benchmark__register_8cc.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="build/_deps/googlebenchmark\l-src/src/benchmark_runner.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$benchmark__runner_8cc.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="build/_deps/googlebenchmark\l-src/test/output_test.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__test_8h.html",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="build/_deps/googlebenchmark\l-src/test/complexity_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$complexity__test_8cc.html",tooltip=" "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="build/_deps/googlebenchmark\l-src/test/display_aggregates\l_only_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$display__aggregates__only__test_8cc.html",tooltip=" "];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="build/_deps/googlebenchmark\l-src/test/internal_threading\l_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$internal__threading__test_8cc.html",tooltip=" "];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="build/_deps/googlebenchmark\l-src/test/memory_manager\l_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$memory__manager__test_8cc.html",tooltip=" "];
+  Node5 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="build/_deps/googlebenchmark\l-src/test/output_test_helper.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$output__test__helper_8cc.html",tooltip=" "];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="build/_deps/googlebenchmark\l-src/test/perf_counters\l_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$perf__counters__test_8cc.html",tooltip=" "];
+  Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="build/_deps/googlebenchmark\l-src/test/repetitions_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$repetitions__test_8cc.html",tooltip=" "];
+  Node5 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="build/_deps/googlebenchmark\l-src/test/report_aggregates\l_only_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$report__aggregates__only__test_8cc.html",tooltip=" "];
+  Node5 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="build/_deps/googlebenchmark\l-src/test/reporter_output\l_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$reporter__output__test_8cc.html",tooltip=" "];
+  Node5 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="build/_deps/googlebenchmark\l-src/test/user_counters\l_tabular_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$user__counters__tabular__test_8cc.html",tooltip=" "];
+  Node5 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="build/_deps/googlebenchmark\l-src/test/user_counters\l_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$user__counters__test_8cc.html",tooltip=" "];
+  Node5 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="build/_deps/googlebenchmark\l-src/test/user_counters\l_thousands_test.cc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$user__counters__thousands__test_8cc.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

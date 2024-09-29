@@ -1,0 +1,137 @@
+\hypertarget{classbenchmark_1_1BenchmarkReporter}{}\doxysection{benchmark\+::Benchmark\+Reporter Class Reference}
+\label{classbenchmark_1_1BenchmarkReporter}\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+
+
+{\ttfamily \#include $<$benchmark.\+h$>$}
+
+
+
+Inheritance diagram for benchmark\+::Benchmark\+Reporter\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1PerFamilyRunReports}{Per\+Family\+Run\+Reports}}
+\item 
+struct \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a0db7ab1fc39bba5a5e59622eaf79341e}{Benchmark\+Reporter}} ()
+\item 
+virtual bool \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a0d1834470fe47a308a8f5c8b9900706e}{Report\+Context}} (const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} \&context)=0
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a13ffa7402959d45d05e36eace966fc4c}{Report\+Runs\+Config}} (double, bool, \mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}})
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a9b4fd50b7b1d441d7ca44249a5971ad8}{Report\+Runs}} (const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} $>$ \&report)=0
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_aa9116282f2e2fa984ee7f11d53d5fa15}{Finalize}} ()
+\item 
+void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a703e2a25fee7050b7badd1922dca945d}{Set\+Output\+Stream}} (std\+::ostream $\ast$out)
+\item 
+void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a9289e45f81a88cab04dbdaf8f102c4e3}{Set\+Error\+Stream}} (std\+::ostream $\ast$err)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a8579c6156afd8a0c5c7569262dcf034d}{Get\+Output\+Stream}} () const
+\item 
+std\+::ostream \& \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a748af2901286cb8118f940ef3e04d8b3}{Get\+Error\+Stream}} () const
+\item 
+virtual \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a5529e7604d50f9196fdfa01e4898e16f}{$\sim$\+Benchmark\+Reporter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classbenchmark_1_1BenchmarkReporter_a2c34777aff00c141056eb52292808099}{Print\+Basic\+Context}} (std\+::ostream $\ast$out, \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} const \&context)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a0db7ab1fc39bba5a5e59622eaf79341e}\label{classbenchmark_1_1BenchmarkReporter_a0db7ab1fc39bba5a5e59622eaf79341e}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!BenchmarkReporter@{BenchmarkReporter}}
+\index{BenchmarkReporter@{BenchmarkReporter}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{BenchmarkReporter()}{BenchmarkReporter()}}
+{\footnotesize\ttfamily benchmark\+::\+Benchmark\+Reporter\+::\+Benchmark\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a5529e7604d50f9196fdfa01e4898e16f}\label{classbenchmark_1_1BenchmarkReporter_a5529e7604d50f9196fdfa01e4898e16f}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!````~BenchmarkReporter@{$\sim$BenchmarkReporter}}
+\index{````~BenchmarkReporter@{$\sim$BenchmarkReporter}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{$\sim$BenchmarkReporter()}{~BenchmarkReporter()}}
+{\footnotesize\ttfamily benchmark\+::\+Benchmark\+Reporter\+::$\sim$\+Benchmark\+Reporter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_aa9116282f2e2fa984ee7f11d53d5fa15}\label{classbenchmark_1_1BenchmarkReporter_aa9116282f2e2fa984ee7f11d53d5fa15}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{Finalize()}{Finalize()}}
+{\footnotesize\ttfamily virtual void benchmark\+::\+Benchmark\+Reporter\+::\+Finalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classbenchmark_1_1JSONReporter_acc6e8175a575127132cb747f8acc207f}{benchmark\+::\+JSONReporter}}.
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a748af2901286cb8118f940ef3e04d8b3}\label{classbenchmark_1_1BenchmarkReporter_a748af2901286cb8118f940ef3e04d8b3}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!GetErrorStream@{GetErrorStream}}
+\index{GetErrorStream@{GetErrorStream}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{GetErrorStream()}{GetErrorStream()}}
+{\footnotesize\ttfamily std\+::ostream\& benchmark\+::\+Benchmark\+Reporter\+::\+Get\+Error\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a8579c6156afd8a0c5c7569262dcf034d}\label{classbenchmark_1_1BenchmarkReporter_a8579c6156afd8a0c5c7569262dcf034d}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!GetOutputStream@{GetOutputStream}}
+\index{GetOutputStream@{GetOutputStream}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{GetOutputStream()}{GetOutputStream()}}
+{\footnotesize\ttfamily std\+::ostream\& benchmark\+::\+Benchmark\+Reporter\+::\+Get\+Output\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a2c34777aff00c141056eb52292808099}\label{classbenchmark_1_1BenchmarkReporter_a2c34777aff00c141056eb52292808099}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!PrintBasicContext@{PrintBasicContext}}
+\index{PrintBasicContext@{PrintBasicContext}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{PrintBasicContext()}{PrintBasicContext()}}
+{\footnotesize\ttfamily void benchmark\+::\+Benchmark\+Reporter\+::\+Print\+Basic\+Context (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{out,  }\item[{\mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} const \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a0d1834470fe47a308a8f5c8b9900706e}\label{classbenchmark_1_1BenchmarkReporter_a0d1834470fe47a308a8f5c8b9900706e}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!ReportContext@{ReportContext}}
+\index{ReportContext@{ReportContext}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{ReportContext()}{ReportContext()}}
+{\footnotesize\ttfamily virtual bool benchmark\+::\+Benchmark\+Reporter\+::\+Report\+Context (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Context}{Context}} \&}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbenchmark_1_1JSONReporter_a8d12162138fef23f18f69984ac71ef3c}{benchmark\+::\+JSONReporter}}, and \mbox{\hyperlink{classbenchmark_1_1ConsoleReporter_a9f667057b524ba3a11d8f7790e7157c5}{benchmark\+::\+Console\+Reporter}}.
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a9b4fd50b7b1d441d7ca44249a5971ad8}\label{classbenchmark_1_1BenchmarkReporter_a9b4fd50b7b1d441d7ca44249a5971ad8}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!ReportRuns@{ReportRuns}}
+\index{ReportRuns@{ReportRuns}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{ReportRuns()}{ReportRuns()}}
+{\footnotesize\ttfamily virtual void benchmark\+::\+Benchmark\+Reporter\+::\+Report\+Runs (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run}{Run}} $>$ \&}]{report }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbenchmark_1_1JSONReporter_ad2ba0c7245aeafb849c59325dfd35dec}{benchmark\+::\+JSONReporter}}, and \mbox{\hyperlink{classbenchmark_1_1ConsoleReporter_a9fcc7ea79267c9c7e79a042c36a631db}{benchmark\+::\+Console\+Reporter}}.
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a13ffa7402959d45d05e36eace966fc4c}\label{classbenchmark_1_1BenchmarkReporter_a13ffa7402959d45d05e36eace966fc4c}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!ReportRunsConfig@{ReportRunsConfig}}
+\index{ReportRunsConfig@{ReportRunsConfig}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{ReportRunsConfig()}{ReportRunsConfig()}}
+{\footnotesize\ttfamily virtual void benchmark\+::\+Benchmark\+Reporter\+::\+Report\+Runs\+Config (\begin{DoxyParamCaption}\item[{double}]{,  }\item[{bool}]{,  }\item[{\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a9289e45f81a88cab04dbdaf8f102c4e3}\label{classbenchmark_1_1BenchmarkReporter_a9289e45f81a88cab04dbdaf8f102c4e3}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!SetErrorStream@{SetErrorStream}}
+\index{SetErrorStream@{SetErrorStream}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{SetErrorStream()}{SetErrorStream()}}
+{\footnotesize\ttfamily void benchmark\+::\+Benchmark\+Reporter\+::\+Set\+Error\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1BenchmarkReporter_a703e2a25fee7050b7badd1922dca945d}\label{classbenchmark_1_1BenchmarkReporter_a703e2a25fee7050b7badd1922dca945d}} 
+\index{benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}!SetOutputStream@{SetOutputStream}}
+\index{SetOutputStream@{SetOutputStream}!benchmark::BenchmarkReporter@{benchmark::BenchmarkReporter}}
+\doxysubsubsection{\texorpdfstring{SetOutputStream()}{SetOutputStream()}}
+{\footnotesize\ttfamily void benchmark\+::\+Benchmark\+Reporter\+::\+Set\+Output\+Stream (\begin{DoxyParamCaption}\item[{std\+::ostream $\ast$}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/\mbox{\hyperlink{benchmark_8h}{benchmark.\+h}}\item 
+build/\+\_\+deps/googlebenchmark-\/src/src/\mbox{\hyperlink{reporter_8cc}{reporter.\+cc}}\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{commandlineflags_8h}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/src/commandlineflags.h File Reference}
+\label{commandlineflags_8h}\index{build/\_deps/googlebenchmark-\/src/src/commandlineflags.h@{build/\_deps/googlebenchmark-\/src/src/commandlineflags.h}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}benchmark/export.\+h\char`\"{}}\newline
+Include dependency graph for commandlineflags.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebenchmark}{benchmark}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)~FLAGS\+\_\+\#\#name
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a592c52e95193d159da680e0c000adeb2}{BM\+\_\+\+DECLARE\+\_\+bool}}(name)~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern bool \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_ab264e356966a41422b6b22e3cc888abc}{BM\+\_\+\+DECLARE\+\_\+int32}}(name)~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern int32\+\_\+t \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a37d1ebd2f3a4a9defc47a86a485664f4}{BM\+\_\+\+DECLARE\+\_\+double}}(name)~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern double \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a8f3659b7fc54c0c6bcf96539c7307f7d}{BM\+\_\+\+DECLARE\+\_\+string}}(name)~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern std\+::string \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a07e66c43c15f210d58937eb19099b1b2}{BM\+\_\+\+DECLARE\+\_\+kvpairs}}(name)~  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern std\+::map$<$std\+::string, std\+::string$>$ \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a3d727d885bdc9f7bc5dacdca395d38da}{BM\+\_\+\+DEFINE\+\_\+bool}}(name,  default\+\_\+val)~  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) = \mbox{\hyperlink{namespacebenchmark_ab679d71f43d542cfa6def445b5540f68}{benchmark\+::\+Bool\+From\+Env}}(\#name, default\+\_\+val)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a8d12c0c04f259dc860ca20e3a3c8b60d}{BM\+\_\+\+DEFINE\+\_\+int32}}(name,  default\+\_\+val)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_afdc512a71e16415bce22cecf8d48bf75}{BM\+\_\+\+DEFINE\+\_\+double}}(name,  default\+\_\+val)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a345768291d9a32924d2270ba44983ae6}{BM\+\_\+\+DEFINE\+\_\+string}}(name,  default\+\_\+val)
+\item 
+\#define \mbox{\hyperlink{commandlineflags_8h_a0b8036b6513447e40f4427abfdcfb693}{BM\+\_\+\+DEFINE\+\_\+kvpairs}}(name,  default\+\_\+val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_ab679d71f43d542cfa6def445b5540f68}{benchmark\+::\+Bool\+From\+Env}} (const char $\ast$flag, bool default\+\_\+val)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} int32\+\_\+t \mbox{\hyperlink{namespacebenchmark_a76f63dbb3466c07fe81b69de996ebbbf}{benchmark\+::\+Int32\+From\+Env}} (const char $\ast$flag, int32\+\_\+t default\+\_\+val)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} double \mbox{\hyperlink{namespacebenchmark_a21f3e134edcd8bde1504a26ec89e5845}{benchmark\+::\+Double\+From\+Env}} (const char $\ast$flag, double default\+\_\+val)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} const char $\ast$ \mbox{\hyperlink{namespacebenchmark_a61aa8ce2f25968c24596ca260a05a421}{benchmark\+::\+String\+From\+Env}} (const char $\ast$flag, const char $\ast$default\+\_\+val)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{namespacebenchmark_a29576eb35da56e0aec42e04397e10545}{benchmark\+::\+Kv\+Pairs\+From\+Env}} (const char $\ast$flag, std\+::map$<$ std\+::string, std\+::string $>$ default\+\_\+val)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_ac2b0d2493ca48121e3e181d676cec581}{benchmark\+::\+Parse\+Bool\+Flag}} (const char $\ast$str, const char $\ast$flag, bool $\ast$\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a7aca0456608bffc8c81790a17f875cf1}{benchmark\+::\+Parse\+Int32\+Flag}} (const char $\ast$str, const char $\ast$flag, int32\+\_\+t $\ast$\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a5895ef2895601f371674c2f7677424f4}{benchmark\+::\+Parse\+Double\+Flag}} (const char $\ast$str, const char $\ast$flag, double $\ast$\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a79f7de13863a1ee502d3118a01085d08}{benchmark\+::\+Parse\+String\+Flag}} (const char $\ast$str, const char $\ast$flag, std\+::string $\ast$\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a6c7a767335e27f29ac93ba48234611a1}{benchmark\+::\+Parse\+Key\+Value\+Flag}} (const char $\ast$str, const char $\ast$flag, std\+::map$<$ std\+::string, std\+::string $>$ $\ast$\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a12ff5681cb1077f4ae80a403de7e3366}{benchmark\+::\+Is\+Flag}} (const char $\ast$str, const char $\ast$flag)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_ae9097f7d2a90540bbdfff3abee55e08a}{benchmark\+::\+Is\+Truthy\+Flag\+Value}} (const std\+::string \&\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{commandlineflags_8h_a592c52e95193d159da680e0c000adeb2}\label{commandlineflags_8h_a592c52e95193d159da680e0c000adeb2}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DECLARE\_bool@{BM\_DECLARE\_bool}}
+\index{BM\_DECLARE\_bool@{BM\_DECLARE\_bool}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DECLARE\_bool}{BM\_DECLARE\_bool}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DECLARE\+\_\+bool(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern bool \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)}
+
+\mbox{\Hypertarget{commandlineflags_8h_a37d1ebd2f3a4a9defc47a86a485664f4}\label{commandlineflags_8h_a37d1ebd2f3a4a9defc47a86a485664f4}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DECLARE\_double@{BM\_DECLARE\_double}}
+\index{BM\_DECLARE\_double@{BM\_DECLARE\_double}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DECLARE\_double}{BM\_DECLARE\_double}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DECLARE\+\_\+double(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern double \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)}
+
+\mbox{\Hypertarget{commandlineflags_8h_ab264e356966a41422b6b22e3cc888abc}\label{commandlineflags_8h_ab264e356966a41422b6b22e3cc888abc}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DECLARE\_int32@{BM\_DECLARE\_int32}}
+\index{BM\_DECLARE\_int32@{BM\_DECLARE\_int32}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DECLARE\_int32}{BM\_DECLARE\_int32}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DECLARE\+\_\+int32(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern int32\+\_\+t \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)}
+
+\mbox{\Hypertarget{commandlineflags_8h_a07e66c43c15f210d58937eb19099b1b2}\label{commandlineflags_8h_a07e66c43c15f210d58937eb19099b1b2}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DECLARE\_kvpairs@{BM\_DECLARE\_kvpairs}}
+\index{BM\_DECLARE\_kvpairs@{BM\_DECLARE\_kvpairs}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DECLARE\_kvpairs}{BM\_DECLARE\_kvpairs}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DECLARE\+\_\+kvpairs(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern std\+::map$<$std\+::string, std\+::string$>$ \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)}
+
+\mbox{\Hypertarget{commandlineflags_8h_a8f3659b7fc54c0c6bcf96539c7307f7d}\label{commandlineflags_8h_a8f3659b7fc54c0c6bcf96539c7307f7d}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DECLARE\_string@{BM\_DECLARE\_string}}
+\index{BM\_DECLARE\_string@{BM\_DECLARE\_string}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DECLARE\_string}{BM\_DECLARE\_string}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DECLARE\+\_\+string(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} extern std\+::string \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name)}
+
+\mbox{\Hypertarget{commandlineflags_8h_a3d727d885bdc9f7bc5dacdca395d38da}\label{commandlineflags_8h_a3d727d885bdc9f7bc5dacdca395d38da}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DEFINE\_bool@{BM\_DEFINE\_bool}}
+\index{BM\_DEFINE\_bool@{BM\_DEFINE\_bool}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DEFINE\_bool}{BM\_DEFINE\_bool}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DEFINE\+\_\+bool(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{default\+\_\+val }\end{DoxyParamCaption})~  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) = \mbox{\hyperlink{namespacebenchmark_ab679d71f43d542cfa6def445b5540f68}{benchmark\+::\+Bool\+From\+Env}}(\#name, default\+\_\+val)}
+
+\mbox{\Hypertarget{commandlineflags_8h_afdc512a71e16415bce22cecf8d48bf75}\label{commandlineflags_8h_afdc512a71e16415bce22cecf8d48bf75}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DEFINE\_double@{BM\_DEFINE\_double}}
+\index{BM\_DEFINE\_double@{BM\_DEFINE\_double}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DEFINE\_double}{BM\_DEFINE\_double}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DEFINE\+\_\+double(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{default\+\_\+val }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\_EXPORT}} \textcolor{keywordtype}{double} \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) =      \mbox{\hyperlink{namespacebenchmark_a21f3e134edcd8bde1504a26ec89e5845}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacebenchmark_a21f3e134edcd8bde1504a26ec89e5845}{      benchmark::DoubleFromEnv}}(\#name, default\_val)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{commandlineflags_8h_a8d12c0c04f259dc860ca20e3a3c8b60d}\label{commandlineflags_8h_a8d12c0c04f259dc860ca20e3a3c8b60d}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DEFINE\_int32@{BM\_DEFINE\_int32}}
+\index{BM\_DEFINE\_int32@{BM\_DEFINE\_int32}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DEFINE\_int32}{BM\_DEFINE\_int32}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DEFINE\+\_\+int32(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{default\+\_\+val }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\_EXPORT}} int32\_t \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) =    \mbox{\hyperlink{namespacebenchmark_a76f63dbb3466c07fe81b69de996ebbbf}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacebenchmark_a76f63dbb3466c07fe81b69de996ebbbf}{      benchmark::Int32FromEnv}}(\#name, default\_val)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{commandlineflags_8h_a0b8036b6513447e40f4427abfdcfb693}\label{commandlineflags_8h_a0b8036b6513447e40f4427abfdcfb693}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DEFINE\_kvpairs@{BM\_DEFINE\_kvpairs}}
+\index{BM\_DEFINE\_kvpairs@{BM\_DEFINE\_kvpairs}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DEFINE\_kvpairs}{BM\_DEFINE\_kvpairs}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DEFINE\+\_\+kvpairs(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{default\+\_\+val }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\_EXPORT}} std::map<std::string, std::string> \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) = \mbox{\hyperlink{namespacebenchmark_a29576eb35da56e0aec42e04397e10545}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacebenchmark_a29576eb35da56e0aec42e04397e10545}{      benchmark::KvPairsFromEnv}}(\#name, default\_val)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{commandlineflags_8h_a345768291d9a32924d2270ba44983ae6}\label{commandlineflags_8h_a345768291d9a32924d2270ba44983ae6}} 
+\index{commandlineflags.h@{commandlineflags.h}!BM\_DEFINE\_string@{BM\_DEFINE\_string}}
+\index{BM\_DEFINE\_string@{BM\_DEFINE\_string}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{BM\_DEFINE\_string}{BM\_DEFINE\_string}}
+{\footnotesize\ttfamily \#define BM\+\_\+\+DEFINE\+\_\+string(\begin{DoxyParamCaption}\item[{}]{name,  }\item[{}]{default\+\_\+val }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\_EXPORT}} std::string \mbox{\hyperlink{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}{FLAG}}(name) = \mbox{\hyperlink{namespacebenchmark_a61aa8ce2f25968c24596ca260a05a421}{\(\backslash\)}}}
+\DoxyCodeLine{\mbox{\hyperlink{namespacebenchmark_a61aa8ce2f25968c24596ca260a05a421}{      benchmark::StringFromEnv}}(\#name, default\_val)}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}\label{commandlineflags_8h_a7024ad1a0cac90389dde8bf1de58a920}} 
+\index{commandlineflags.h@{commandlineflags.h}!FLAG@{FLAG}}
+\index{FLAG@{FLAG}!commandlineflags.h@{commandlineflags.h}}
+\doxysubsubsection{\texorpdfstring{FLAG}{FLAG}}
+{\footnotesize\ttfamily \#define FLAG(\begin{DoxyParamCaption}\item[{}]{name }\end{DoxyParamCaption})~FLAGS\+\_\+\#\#name}
+

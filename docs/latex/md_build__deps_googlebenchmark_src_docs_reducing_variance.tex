@@ -1,0 +1,90 @@
+\label{_disabling-cpu-frequency-scaling}%
+\hypertarget{md_build__deps_googlebenchmark_src_docs_reducing_variance_autotoc_md23}{}\doxysection{Disabling CPU Frequency Scaling}\label{md_build__deps_googlebenchmark_src_docs_reducing_variance_autotoc_md23}
+If you see this error\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{***WARNING*** CPU scaling is enabled, the benchmark real time measurements may be noisy and will incur extra overhead.}
+
+\end{DoxyCode}
+
+
+you might want to disable the CPU frequency scaling while running the benchmark, as well as consider other ways to stabilize the performance of your system while benchmarking.
+
+See \mbox{\hyperlink{md_build__deps_googlebenchmark_src_docs_reducing_variance}{Reducing Variance}} for more information.
+
+Exactly how to do this depends on the Linux distribution, desktop environment, and installed programs. Specific details are a moving target, so we will not attempt to exhaustively document them here.
+
+One simple option is to use the {\ttfamily cpupower} program to change the performance governor to \char`\"{}performance\char`\"{}. This tool is maintained along with the Linux kernel and provided by your distribution.
+
+It must be run as root, like this\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo cpupower frequency-\/set -\/-\/governor performance}
+
+\end{DoxyCode}
+
+
+After this you can verify that all CPUs are using the performance governor by running this command\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cpupower frequency-\/info -\/o proc}
+
+\end{DoxyCode}
+
+
+The benchmarks you subsequently run will have less variance.
+
+\label{_reducing-variance}%
+\hypertarget{md_build__deps_googlebenchmark_src_docs_reducing_variance_autotoc_md24}{}\doxysection{Reducing Variance in Benchmarks}\label{md_build__deps_googlebenchmark_src_docs_reducing_variance_autotoc_md24}
+The Linux CPU frequency governor \href{user_guide\#disabling-cpu-frequency-scaling}{\texttt{ discussed above}} is not the only source of noise in benchmarks. Some, but not all, of the sources of variance include\+:
+
+
+\begin{DoxyEnumerate}
+\item On multi-\/core machines not all CPUs/\+CPU cores/\+CPU threads run the same speed, so running a benchmark one time and then again may give a different result depending on which CPU it ran on.
+\item CPU scaling features that run on the CPU, like Intel\textquotesingle{}s Turbo Boost and AMD Turbo Core and Precision Boost, can temporarily change the CPU frequency even when the using the \char`\"{}performance\char`\"{} governor on Linux.
+\item Context switching between CPUs, or scheduling competition on the CPU the benchmark is running on.
+\item Intel Hyperthreading or AMD SMT causing the same issue as above.
+\item Cache effects caused by code running on other CPUs.
+\item Non-\/uniform memory architectures (NUMA).
+\end{DoxyEnumerate}
+
+These can cause variance in benchmarks results within a single run ({\ttfamily -\/-\/benchmark\+\_\+repetitions=N}) or across multiple runs of the benchmark program.
+
+Reducing sources of variance is OS and architecture dependent, which is one reason some companies maintain machines dedicated to performance testing.
+
+Some of the easier and and effective ways of reducing variance on a typical Linux workstation are\+:
+
+
+\begin{DoxyEnumerate}
+\item Use the performance governor as \href{user_guide\#disabling-cpu-frequency-scaling}{\texttt{ discussed above}}.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item Disable processor boosting by\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{echo 0 | sudo tee /sys/devices/system/cpu/cpufreq/boost}
+
+\end{DoxyCode}
+ See the Linux kernel\textquotesingle{}s \href{https://www.kernel.org/doc/Documentation/cpu-freq/boost.txt}{\texttt{ boost.\+txt}} for more information.
+\item Set the benchmark program\textquotesingle{}s task affinity to a fixed cpu. For example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{taskset -\/c 0 ./mybenchmark}
+
+\end{DoxyCode}
+
+\item Disabling Hyperthreading/\+SMT. This can be done in the Bios or using the {\ttfamily /sys} file system (see the LLVM project\textquotesingle{}s \href{https://llvm.org/docs/Benchmarking.html}{\texttt{ Benchmarking tips}}).
+\item Close other programs that do non-\/trivial things based on timers, such as your web browser, desktop environment, etc.
+\item Reduce the working set of your benchmark to fit within the L1 cache, but do be aware that this may lead you to optimize for an unrelistic situation.
+\end{DoxyEnumerate}
+
+Further resources on this topic\+:
+
+
+\begin{DoxyEnumerate}
+\item The LLVM project\textquotesingle{}s \href{https://llvm.org/docs/Benchmarking.html}{\texttt{ Benchmarking tips}}.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item The Arch Wiki \href{https://wiki.archlinux.org/title/CPU_frequency_scaling}{\texttt{ Cpu frequency scaling}} page. 
+\end{DoxyEnumerate}

@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['json_6734',['json',['../classgbench_1_1report_1_1TestReportSorting.html#a9053b9b4e3b66f1a2b68d39863deeb1a',1,'gbench::report::TestReportSorting']]],
+  ['json_5fdiff_5freport_6735',['json_diff_report',['../classgbench_1_1report_1_1TestReportDifference.html#a9abff63b2819dc8256521ae5369f66e3',1,'gbench.report.TestReportDifference.json_diff_report()'],['../classgbench_1_1report_1_1TestReportDifferenceBetweenFamilies.html#a2667193ecd4e6316fb2e10752fa6c47c',1,'gbench.report.TestReportDifferenceBetweenFamilies.json_diff_report()'],['../classgbench_1_1report_1_1TestReportDifferenceWithUTest.html#a26bb18a6ed6bd0c226bc42f5dcc072df',1,'gbench.report.TestReportDifferenceWithUTest.json_diff_report()'],['../classgbench_1_1report_1_1TestReportDifferenceWithUTestWhileDisplayingAggregatesOnly.html#a9d0e20c66fb3121a19b8775de0ee8d14',1,'gbench.report.TestReportDifferenceWithUTestWhileDisplayingAggregatesOnly.json_diff_report()'],['../classgbench_1_1report_1_1TestReportDifferenceForPercentageAggregates.html#a5db1eb70e9ff3c66e8acbbafb2a727cf',1,'gbench.report.TestReportDifferenceForPercentageAggregates.json_diff_report()']]]
+];

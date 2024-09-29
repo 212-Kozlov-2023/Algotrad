@@ -1,0 +1,86 @@
+\hypertarget{output__test__helper_8cc}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/test/output\+\_\+test\+\_\+helper.cc File Reference}
+\label{output__test__helper_8cc}\index{build/\_deps/googlebenchmark-\/src/test/output\_test\_helper.cc@{build/\_deps/googlebenchmark-\/src/test/output\_test\_helper.cc}}
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$streambuf$>$}\newline
+{\ttfamily \#include \char`\"{}../src/benchmark\+\_\+api\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/check.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../src/re.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}output\+\_\+test.\+h\char`\"{}}\newline
+Include dependency graph for output\+\_\+test\+\_\+helper.\+cc\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classinternal_1_1ResultsChecker}{internal\+::\+Results\+Checker}}
+\item 
+struct \mbox{\hyperlink{structinternal_1_1ResultsChecker_1_1PatternAndFn}{internal\+::\+Results\+Checker\+::\+Pattern\+And\+Fn}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceinternal}{internal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Results\+Checker \& \mbox{\hyperlink{namespaceinternal_a96fa9ed0c6c3f7c9f21a73545254d1c4}{internal\+::\+Get\+Results\+Checker}} ()
+\item 
+size\+\_\+t \mbox{\hyperlink{output__test__helper_8cc_aebe30f415f7ffc00a186fced9cf583f4}{Add\+Checker}} (const std\+::string \&bm\+\_\+name, const \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}} \&fn)
+\item 
+int \mbox{\hyperlink{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}} (\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}} ID, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structTestCase}{Test\+Case}} $>$ il)
+\item 
+int \mbox{\hyperlink{output__test__helper_8cc_a33fc10e7528ee8ffc298abf0faac1163}{Set\+Substitutions}} (std\+::initializer\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ il)
+\item 
+\mbox{\hyperlink{benchmark_8h_af72f88a4c52347bf2021e9e71ef37a54}{BENCHMARK\+\_\+\+DISABLE\+\_\+\+DEPRECATED\+\_\+\+WARNING}} void \mbox{\hyperlink{output__test__helper_8cc_a70df269cb32d72399ac097eff14cbe91}{Run\+Output\+Tests}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{benchmark_8h_ac09066e9a6cda5f2096ba7df7d79cb58}{BENCHMARK\+\_\+\+RESTORE\+\_\+\+DEPRECATED\+\_\+\+WARNING}} int \mbox{\hyperlink{output__test__helper_8cc_adfd28b45b15f8e9617e3577ed15d2c45}{Substr\+Cnt}} (const std\+::string \&haystack, const std\+::string \&pat)
+\item 
+std\+::string \mbox{\hyperlink{output__test__helper_8cc_a55c52561adc6d6af725fd55e8fa440a4}{Get\+File\+Reporter\+Output}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}\label{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!AddCases@{AddCases}}
+\index{AddCases@{AddCases}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{AddCases()}{AddCases()}}
+{\footnotesize\ttfamily int Add\+Cases (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}}}]{ID,  }\item[{std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structTestCase}{Test\+Case}} $>$}]{il }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test__helper_8cc_aebe30f415f7ffc00a186fced9cf583f4}\label{output__test__helper_8cc_aebe30f415f7ffc00a186fced9cf583f4}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!AddChecker@{AddChecker}}
+\index{AddChecker@{AddChecker}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{AddChecker()}{AddChecker()}}
+{\footnotesize\ttfamily size\+\_\+t Add\+Checker (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{bm\+\_\+name,  }\item[{const \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}} \&}]{fn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test__helper_8cc_a55c52561adc6d6af725fd55e8fa440a4}\label{output__test__helper_8cc_a55c52561adc6d6af725fd55e8fa440a4}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!GetFileReporterOutput@{GetFileReporterOutput}}
+\index{GetFileReporterOutput@{GetFileReporterOutput}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{GetFileReporterOutput()}{GetFileReporterOutput()}}
+{\footnotesize\ttfamily std\+::string Get\+File\+Reporter\+Output (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test__helper_8cc_a70df269cb32d72399ac097eff14cbe91}\label{output__test__helper_8cc_a70df269cb32d72399ac097eff14cbe91}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!RunOutputTests@{RunOutputTests}}
+\index{RunOutputTests@{RunOutputTests}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{RunOutputTests()}{RunOutputTests()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{benchmark_8h_af72f88a4c52347bf2021e9e71ef37a54}{BENCHMARK\+\_\+\+DISABLE\+\_\+\+DEPRECATED\+\_\+\+WARNING}} void Run\+Output\+Tests (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test__helper_8cc_a33fc10e7528ee8ffc298abf0faac1163}\label{output__test__helper_8cc_a33fc10e7528ee8ffc298abf0faac1163}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!SetSubstitutions@{SetSubstitutions}}
+\index{SetSubstitutions@{SetSubstitutions}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{SetSubstitutions()}{SetSubstitutions()}}
+{\footnotesize\ttfamily int Set\+Substitutions (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$}]{il }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test__helper_8cc_adfd28b45b15f8e9617e3577ed15d2c45}\label{output__test__helper_8cc_adfd28b45b15f8e9617e3577ed15d2c45}} 
+\index{output\_test\_helper.cc@{output\_test\_helper.cc}!SubstrCnt@{SubstrCnt}}
+\index{SubstrCnt@{SubstrCnt}!output\_test\_helper.cc@{output\_test\_helper.cc}}
+\doxysubsubsection{\texorpdfstring{SubstrCnt()}{SubstrCnt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{benchmark_8h_ac09066e9a6cda5f2096ba7df7d79cb58}{BENCHMARK\+\_\+\+RESTORE\+\_\+\+DEPRECATED\+\_\+\+WARNING}} int Substr\+Cnt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{haystack,  }\item[{const std\+::string \&}]{pat }\end{DoxyParamCaption})}
+

@@ -1,0 +1,201 @@
+\hypertarget{register__benchmark__test_8cc}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/test/register\+\_\+benchmark\+\_\+test.cc File Reference}
+\label{register__benchmark__test_8cc}\index{build/\_deps/googlebenchmark-\/src/test/register\_benchmark\_test.cc@{build/\_deps/googlebenchmark-\/src/test/register\_benchmark\_test.cc}}
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../src/check.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}benchmark/benchmark.\+h\char`\"{}}\newline
+Include dependency graph for register\+\_\+benchmark\+\_\+test.\+cc\+:
+% FIG 0
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCustomFixture}{Custom\+Fixture}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{register__benchmark__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})~\mbox{\hyperlink{skip__with__error__test_8cc_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})
+\item 
+\#define \mbox{\hyperlink{register__benchmark__test_8cc_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})~\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}\#\#\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}}
+\item 
+\#define \mbox{\hyperlink{register__benchmark__test_8cc_a04ac612b4456ef57752035929a56750a}{ADD\+\_\+\+CASES}}(...)~int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \mbox{\hyperlink{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}}(\{\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+\})
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{benchmark\+::internal\+::\+Benchmark}} $\ast$ \mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}{BM\+\_\+function}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&state)
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_a55ab771cf5d851cc6af7b1568c0e24fd}{BENCHMARK}} (\mbox{\hyperlink{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}{BM\+\_\+function}})
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_a0c60707193e5eaeb9b282b625ae11737}{ADD\+\_\+\+CASES}} (\{\char`\"{}BM\+\_\+function\char`\"{}\}, \{\char`\"{}BM\+\_\+function\+\_\+manual\+\_\+registration\char`\"{}\})
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_ae4d61abe100d9b6cf97182611600eb2a}{BM\+\_\+extra\+\_\+args}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&st, const char $\ast$label)
+\item 
+int \mbox{\hyperlink{register__benchmark__test_8cc_aa3d8a85ae5a0011b3c3622e2b6e275dc}{Register\+From\+Function}} ()
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_ac7c9c736aaa93f33917a18419e0f9c25}{ADD\+\_\+\+CASES}} (\{\char`\"{}test1\char`\"{}, \char`\"{}One\char`\"{}\}, \{\char`\"{}test2\char`\"{}, \char`\"{}Two\char`\"{}\}, \{\char`\"{}test3\char`\"{}, \char`\"{}Three\char`\"{}\})
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}{DISABLED\+\_\+\+BM\+\_\+function}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&state)
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_a2d4ee7da2390ccf8b31757244d4b894c}{BENCHMARK}} (\mbox{\hyperlink{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}{DISABLED\+\_\+\+BM\+\_\+function}})
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_aaaf51229ccf8adef2877e2c5fbbd3839}{Test\+Registration\+At\+Runtime}} ()
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_a997fac03e4fc2e3149fc76001d39d89b}{Run\+Test\+One}} ()
+\item 
+void \mbox{\hyperlink{register__benchmark__test_8cc_a1d7a179d590e6833b31db74877e6771f}{Run\+Test\+Two}} ()
+\item 
+int \mbox{\hyperlink{register__benchmark__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}} \mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}
+\item 
+int \mbox{\hyperlink{register__benchmark__test_8cc_aee22e5243fe3911fc6b8aa36c91f6de1}{dummy2}} = \mbox{\hyperlink{register__benchmark__test_8cc_aa3d8a85ae5a0011b3c3622e2b6e275dc}{Register\+From\+Function}}()
+\item 
+\mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}} \mbox{\hyperlink{register__benchmark__test_8cc_a91735f42f8d31ab4576b0affbc8ede37}{dummy3}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{register__benchmark__test_8cc_a04ac612b4456ef57752035929a56750a}\label{register__benchmark__test_8cc_a04ac612b4456ef57752035929a56750a}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!ADD\_CASES@{ADD\_CASES}}
+\index{ADD\_CASES@{ADD\_CASES}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_CASES}{ADD\_CASES}}
+{\footnotesize\ttfamily \#define ADD\+\_\+\+CASES(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \mbox{\hyperlink{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}}(\{\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+\})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}\label{register__benchmark__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!CONCAT@{CONCAT}}
+\index{CONCAT@{CONCAT}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{CONCAT}{CONCAT}}
+{\footnotesize\ttfamily \#define CONCAT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  }\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}} }\end{DoxyParamCaption})~\mbox{\hyperlink{skip__with__error__test_8cc_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a6686571cd8d511b7268f872d6dcc226a}\label{register__benchmark__test_8cc_a6686571cd8d511b7268f872d6dcc226a}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!CONCAT2@{CONCAT2}}
+\index{CONCAT2@{CONCAT2}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{CONCAT2}{CONCAT2}}
+{\footnotesize\ttfamily \#define CONCAT2(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  }\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}} }\end{DoxyParamCaption})~\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}\#\#\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}}}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}\label{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!ReturnVal@{ReturnVal}}
+\index{ReturnVal@{ReturnVal}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ReturnVal}{ReturnVal}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{benchmark\+::internal\+::\+Benchmark}}$\ast$ \mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{register__benchmark__test_8cc_a0c60707193e5eaeb9b282b625ae11737}\label{register__benchmark__test_8cc_a0c60707193e5eaeb9b282b625ae11737}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!ADD\_CASES@{ADD\_CASES}}
+\index{ADD\_CASES@{ADD\_CASES}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_CASES()}{ADD\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ADD\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\{\char`\"{}BM\+\_\+function\char`\"{}\}}]{,  }\item[{\{\char`\"{}BM\+\_\+function\+\_\+manual\+\_\+registration\char`\"{}\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_ac7c9c736aaa93f33917a18419e0f9c25}\label{register__benchmark__test_8cc_ac7c9c736aaa93f33917a18419e0f9c25}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!ADD\_CASES@{ADD\_CASES}}
+\index{ADD\_CASES@{ADD\_CASES}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_CASES()}{ADD\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ADD\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\{\char`\"{}test1\char`\"{}, \char`\"{}One\char`\"{}\}}]{,  }\item[{\{\char`\"{}test2\char`\"{}, \char`\"{}Two\char`\"{}\}}]{,  }\item[{\{\char`\"{}test3\char`\"{}, \char`\"{}Three\char`\"{}\}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a55ab771cf5d851cc6af7b1568c0e24fd}\label{register__benchmark__test_8cc_a55ab771cf5d851cc6af7b1568c0e24fd}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!BENCHMARK@{BENCHMARK}}
+\index{BENCHMARK@{BENCHMARK}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK()}{BENCHMARK()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily BENCHMARK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}{BM\+\_\+function}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a2d4ee7da2390ccf8b31757244d4b894c}\label{register__benchmark__test_8cc_a2d4ee7da2390ccf8b31757244d4b894c}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!BENCHMARK@{BENCHMARK}}
+\index{BENCHMARK@{BENCHMARK}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK()}{BENCHMARK()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily BENCHMARK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}{DISABLED\+\_\+\+BM\+\_\+function}}}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_ae4d61abe100d9b6cf97182611600eb2a}\label{register__benchmark__test_8cc_ae4d61abe100d9b6cf97182611600eb2a}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!BM\_extra\_args@{BM\_extra\_args}}
+\index{BM\_extra\_args@{BM\_extra\_args}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BM\_extra\_args()}{BM\_extra\_args()}}
+{\footnotesize\ttfamily void BM\+\_\+extra\+\_\+args (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{st,  }\item[{const char $\ast$}]{label }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}\label{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!BM\_function@{BM\_function}}
+\index{BM\_function@{BM\_function}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BM\_function()}{BM\_function()}}
+{\footnotesize\ttfamily void BM\+\_\+function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}\label{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!DISABLED\_BM\_function@{DISABLED\_BM\_function}}
+\index{DISABLED\_BM\_function@{DISABLED\_BM\_function}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{DISABLED\_BM\_function()}{DISABLED\_BM\_function()}}
+{\footnotesize\ttfamily void DISABLED\+\_\+\+BM\+\_\+function (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}\label{register__benchmark__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!main@{main}}
+\index{main@{main}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_aa3d8a85ae5a0011b3c3622e2b6e275dc}\label{register__benchmark__test_8cc_aa3d8a85ae5a0011b3c3622e2b6e275dc}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!RegisterFromFunction@{RegisterFromFunction}}
+\index{RegisterFromFunction@{RegisterFromFunction}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{RegisterFromFunction()}{RegisterFromFunction()}}
+{\footnotesize\ttfamily int Register\+From\+Function (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a997fac03e4fc2e3149fc76001d39d89b}\label{register__benchmark__test_8cc_a997fac03e4fc2e3149fc76001d39d89b}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!RunTestOne@{RunTestOne}}
+\index{RunTestOne@{RunTestOne}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{RunTestOne()}{RunTestOne()}}
+{\footnotesize\ttfamily void Run\+Test\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a1d7a179d590e6833b31db74877e6771f}\label{register__benchmark__test_8cc_a1d7a179d590e6833b31db74877e6771f}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!RunTestTwo@{RunTestTwo}}
+\index{RunTestTwo@{RunTestTwo}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{RunTestTwo()}{RunTestTwo()}}
+{\footnotesize\ttfamily void Run\+Test\+Two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_aaaf51229ccf8adef2877e2c5fbbd3839}\label{register__benchmark__test_8cc_aaaf51229ccf8adef2877e2c5fbbd3839}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!TestRegistrationAtRuntime@{TestRegistrationAtRuntime}}
+\index{TestRegistrationAtRuntime@{TestRegistrationAtRuntime}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{TestRegistrationAtRuntime()}{TestRegistrationAtRuntime()}}
+{\footnotesize\ttfamily void Test\+Registration\+At\+Runtime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}\label{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!dummy@{dummy}}
+\index{dummy@{dummy}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{dummy}{dummy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}} dummy}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{namespacebenchmark_a7bc9063890989f6296c4213e9f80686c}{benchmark::RegisterBenchmark}}(}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}BM\_function\_manual\_registration"{}}, \mbox{\hyperlink{register__benchmark__test_8cc_ad3f09a72b53d3faa4480dcc9c5390eb5}{BM\_function}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{register__benchmark__test_8cc_aee22e5243fe3911fc6b8aa36c91f6de1}\label{register__benchmark__test_8cc_aee22e5243fe3911fc6b8aa36c91f6de1}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!dummy2@{dummy2}}
+\index{dummy2@{dummy2}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{dummy2}{dummy2}}
+{\footnotesize\ttfamily int dummy2 = \mbox{\hyperlink{register__benchmark__test_8cc_aa3d8a85ae5a0011b3c3622e2b6e275dc}{Register\+From\+Function}}()}
+
+\mbox{\Hypertarget{register__benchmark__test_8cc_a91735f42f8d31ab4576b0affbc8ede37}\label{register__benchmark__test_8cc_a91735f42f8d31ab4576b0affbc8ede37}} 
+\index{register\_benchmark\_test.cc@{register\_benchmark\_test.cc}!dummy3@{dummy3}}
+\index{dummy3@{dummy3}!register\_benchmark\_test.cc@{register\_benchmark\_test.cc}}
+\doxysubsubsection{\texorpdfstring{dummy3}{dummy3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{register__benchmark__test_8cc_a86ff009e02ddd1e35f2d24920dcce0ac}{Return\+Val}} dummy3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \mbox{\hyperlink{namespacebenchmark_a7bc9063890989f6296c4213e9f80686c}{benchmark::RegisterBenchmark}}(\textcolor{stringliteral}{"{}DISABLED\_BM\_function\_manual"{}},}
+\DoxyCodeLine{                                                \mbox{\hyperlink{register__benchmark__test_8cc_a45f00ae8c1173eed462b952e618c8185}{DISABLED\_BM\_function}})}
+
+\end{DoxyCode}

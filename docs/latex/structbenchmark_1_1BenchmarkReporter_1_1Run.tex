@@ -1,0 +1,308 @@
+\hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run}{}\doxysection{benchmark\+::Benchmark\+Reporter\+::Run Struct Reference}
+\label{structbenchmark_1_1BenchmarkReporter_1_1Run}\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+
+
+{\ttfamily \#include $<$benchmark.\+h$>$}
+
+
+
+Collaboration diagram for benchmark\+::Benchmark\+Reporter\+::Run\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}{Run\+Type}} \{ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a0406070b06a0f5f6b31e8c7dd158e94a}{RT\+\_\+\+Iteration}}
+, \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a43104bb56c9fedd62bd4c5b7271ffe91}{RT\+\_\+\+Aggregate}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_aafa2de73d5b84e8c858c48c3d7d7e916}{Run}} ()
+\item 
+std\+::string \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a5fe95efbef2619686182b285febc327b}{benchmark\+\_\+name}} () const
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a0977a18a0657e5751827d2a1bb7baa23}{Get\+Adjusted\+Real\+Time}} () const
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a667177d5c68dda14228b6548da4a5da0}{Get\+Adjusted\+CPUTime}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structbenchmark_1_1BenchmarkName}{Benchmark\+Name}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a9495d6d81e1e9fe68e6c28161e42cb91}{run\+\_\+name}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_abe2de9abca9b021cac85e6200b3dd61d}{family\+\_\+index}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_aec24c4d3139048e2dbf8c0d3be1913ae}{per\+\_\+family\+\_\+instance\+\_\+index}}
+\item 
+\mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}{Run\+Type}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a0d0d5378a2e94beea53f0b5d01168c36}{run\+\_\+type}}
+\item 
+std\+::string \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_af270b078f9eaf7c327a69c83519f49a1}{aggregate\+\_\+name}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30}{Statistic\+Unit}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1e8215e5bf1bd54b1da5cc407be7b99c}{aggregate\+\_\+unit}}
+\item 
+std\+::string \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_ad32adb9cae391e8b2cf889990dee413c}{report\+\_\+label}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_1_1internal_aa75723707dc78caec482da86ecdea7e5}{internal\+::\+Skipped}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a853003d5620465f90e77c72c2e99188b}{skipped}}
+\item 
+std\+::string \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a56247b6fbd5a9020b5a248e2a7bb47bf}{skip\+\_\+message}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_acb7ab14615438be7e592efc597726ee3}{iterations}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_aca09e8273c8ce2b00e1add41f7229cee}{threads}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a3a895d6c03778c504867a7bf25983464}{repetition\+\_\+index}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a9a775f61116bf84a59a653091eba8f40}{repetitions}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_af988c9261cdffdab73edab984e6dac39}{time\+\_\+unit}}
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_ae169fb30833f2a405a6bb7186f0e357a}{real\+\_\+accumulated\+\_\+time}}
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a2e92afc22720167364b9c1e92adcbcc7}{cpu\+\_\+accumulated\+\_\+time}}
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a8780b58b2b560abb6181190c66f3db43}{max\+\_\+heapbytes\+\_\+used}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5}{BigO}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1d7a2c745a69f751d57e159d260ea2f5}{complexity}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_a0dd20052d0c23b292a757ed789d23563}{Big\+OFunc}} $\ast$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a178db4272812ca32c49136b7a3eaf708}{complexity\+\_\+lambda}}
+\item 
+int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a38a76efe4e79f81ec69654805d002fa2}{complexity\+\_\+n}}
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structbenchmark_1_1internal_1_1Statistics}{internal\+::\+Statistics}} $>$ $\ast$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a32943097f17561fa1794e7d8c438c946}{statistics}}
+\item 
+bool \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a074e85e93ba222cfa7aa3a2a04453f6d}{report\+\_\+big\+\_\+o}}
+\item 
+bool \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a63312dd9b92f8205abd9b2e2ba924570}{report\+\_\+rms}}
+\item 
+\mbox{\hyperlink{namespacebenchmark_a7825a9b4c48b04ff4b2235fe55c92359}{User\+Counters}} \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_ab8422b3d4573c022e883a92f4d120599}{counters}}
+\item 
+const \mbox{\hyperlink{structbenchmark_1_1MemoryManager_1_1Result}{Memory\+Manager\+::\+Result}} $\ast$ \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a3c81fec02b36e1a465ce7c3e2d7d4f0b}{memory\+\_\+result}}
+\item 
+double \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_ae7e41ecd0c9e6f2d62b6a7d764ed07ae}{allocs\+\_\+per\+\_\+iter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int64\+\_\+t \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_ae31659e19f40fda402392ce21f12b52d}{no\+\_\+repetition\+\_\+index}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!RunType@{RunType}}
+\index{RunType@{RunType}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{RunType}{RunType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}{benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::\+Run\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Iteration@{RT\_Iteration}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!RT\_Iteration@{RT\_Iteration}}}\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a0406070b06a0f5f6b31e8c7dd158e94a}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a0406070b06a0f5f6b31e8c7dd158e94a}} 
+RT\+\_\+\+Iteration&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RT\_Aggregate@{RT\_Aggregate}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!RT\_Aggregate@{RT\_Aggregate}}}\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a43104bb56c9fedd62bd4c5b7271ffe91}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5a43104bb56c9fedd62bd4c5b7271ffe91}} 
+RT\+\_\+\+Aggregate&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_aafa2de73d5b84e8c858c48c3d7d7e916}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_aafa2de73d5b84e8c858c48c3d7d7e916}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!Run@{Run}}
+\index{Run@{Run}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a5fe95efbef2619686182b285febc327b}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a5fe95efbef2619686182b285febc327b}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!benchmark\_name@{benchmark\_name}}
+\index{benchmark\_name@{benchmark\_name}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{benchmark\_name()}{benchmark\_name()}}
+{\footnotesize\ttfamily std\+::string benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::benchmark\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a667177d5c68dda14228b6548da4a5da0}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a667177d5c68dda14228b6548da4a5da0}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!GetAdjustedCPUTime@{GetAdjustedCPUTime}}
+\index{GetAdjustedCPUTime@{GetAdjustedCPUTime}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{GetAdjustedCPUTime()}{GetAdjustedCPUTime()}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::\+Get\+Adjusted\+CPUTime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a0977a18a0657e5751827d2a1bb7baa23}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a0977a18a0657e5751827d2a1bb7baa23}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!GetAdjustedRealTime@{GetAdjustedRealTime}}
+\index{GetAdjustedRealTime@{GetAdjustedRealTime}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{GetAdjustedRealTime()}{GetAdjustedRealTime()}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::\+Get\+Adjusted\+Real\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_af270b078f9eaf7c327a69c83519f49a1}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_af270b078f9eaf7c327a69c83519f49a1}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!aggregate\_name@{aggregate\_name}}
+\index{aggregate\_name@{aggregate\_name}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{aggregate\_name}{aggregate\_name}}
+{\footnotesize\ttfamily std\+::string benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::aggregate\+\_\+name}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a1e8215e5bf1bd54b1da5cc407be7b99c}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a1e8215e5bf1bd54b1da5cc407be7b99c}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!aggregate\_unit@{aggregate\_unit}}
+\index{aggregate\_unit@{aggregate\_unit}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{aggregate\_unit}{aggregate\_unit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30}{Statistic\+Unit}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::aggregate\+\_\+unit}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_ae7e41ecd0c9e6f2d62b6a7d764ed07ae}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_ae7e41ecd0c9e6f2d62b6a7d764ed07ae}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!allocs\_per\_iter@{allocs\_per\_iter}}
+\index{allocs\_per\_iter@{allocs\_per\_iter}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{allocs\_per\_iter}{allocs\_per\_iter}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::allocs\+\_\+per\+\_\+iter}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a1d7a2c745a69f751d57e159d260ea2f5}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a1d7a2c745a69f751d57e159d260ea2f5}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!complexity@{complexity}}
+\index{complexity@{complexity}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{complexity}{complexity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5}{BigO}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::complexity}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a178db4272812ca32c49136b7a3eaf708}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a178db4272812ca32c49136b7a3eaf708}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!complexity\_lambda@{complexity\_lambda}}
+\index{complexity\_lambda@{complexity\_lambda}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{complexity\_lambda}{complexity\_lambda}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_a0dd20052d0c23b292a757ed789d23563}{Big\+OFunc}}$\ast$ benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::complexity\+\_\+lambda}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a38a76efe4e79f81ec69654805d002fa2}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a38a76efe4e79f81ec69654805d002fa2}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!complexity\_n@{complexity\_n}}
+\index{complexity\_n@{complexity\_n}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{complexity\_n}{complexity\_n}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::complexity\+\_\+n}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_ab8422b3d4573c022e883a92f4d120599}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_ab8422b3d4573c022e883a92f4d120599}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!counters@{counters}}
+\index{counters@{counters}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{counters}{counters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_a7825a9b4c48b04ff4b2235fe55c92359}{User\+Counters}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::counters}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a2e92afc22720167364b9c1e92adcbcc7}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a2e92afc22720167364b9c1e92adcbcc7}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!cpu\_accumulated\_time@{cpu\_accumulated\_time}}
+\index{cpu\_accumulated\_time@{cpu\_accumulated\_time}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{cpu\_accumulated\_time}{cpu\_accumulated\_time}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::cpu\+\_\+accumulated\+\_\+time}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_abe2de9abca9b021cac85e6200b3dd61d}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_abe2de9abca9b021cac85e6200b3dd61d}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!family\_index@{family\_index}}
+\index{family\_index@{family\_index}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{family\_index}{family\_index}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::family\+\_\+index}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_acb7ab14615438be7e592efc597726ee3}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_acb7ab14615438be7e592efc597726ee3}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!iterations@{iterations}}
+\index{iterations@{iterations}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{iterations}{iterations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::iterations}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a8780b58b2b560abb6181190c66f3db43}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a8780b58b2b560abb6181190c66f3db43}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!max\_heapbytes\_used@{max\_heapbytes\_used}}
+\index{max\_heapbytes\_used@{max\_heapbytes\_used}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{max\_heapbytes\_used}{max\_heapbytes\_used}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::max\+\_\+heapbytes\+\_\+used}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a3c81fec02b36e1a465ce7c3e2d7d4f0b}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a3c81fec02b36e1a465ce7c3e2d7d4f0b}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!memory\_result@{memory\_result}}
+\index{memory\_result@{memory\_result}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{memory\_result}{memory\_result}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structbenchmark_1_1MemoryManager_1_1Result}{Memory\+Manager\+::\+Result}}$\ast$ benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::memory\+\_\+result}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_ae31659e19f40fda402392ce21f12b52d}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_ae31659e19f40fda402392ce21f12b52d}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!no\_repetition\_index@{no\_repetition\_index}}
+\index{no\_repetition\_index@{no\_repetition\_index}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{no\_repetition\_index}{no\_repetition\_index}}
+{\footnotesize\ttfamily const int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::no\+\_\+repetition\+\_\+index = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_aec24c4d3139048e2dbf8c0d3be1913ae}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_aec24c4d3139048e2dbf8c0d3be1913ae}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!per\_family\_instance\_index@{per\_family\_instance\_index}}
+\index{per\_family\_instance\_index@{per\_family\_instance\_index}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{per\_family\_instance\_index}{per\_family\_instance\_index}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::per\+\_\+family\+\_\+instance\+\_\+index}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_ae169fb30833f2a405a6bb7186f0e357a}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_ae169fb30833f2a405a6bb7186f0e357a}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!real\_accumulated\_time@{real\_accumulated\_time}}
+\index{real\_accumulated\_time@{real\_accumulated\_time}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{real\_accumulated\_time}{real\_accumulated\_time}}
+{\footnotesize\ttfamily double benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::real\+\_\+accumulated\+\_\+time}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a3a895d6c03778c504867a7bf25983464}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a3a895d6c03778c504867a7bf25983464}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!repetition\_index@{repetition\_index}}
+\index{repetition\_index@{repetition\_index}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{repetition\_index}{repetition\_index}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::repetition\+\_\+index}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a9a775f61116bf84a59a653091eba8f40}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a9a775f61116bf84a59a653091eba8f40}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!repetitions@{repetitions}}
+\index{repetitions@{repetitions}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{repetitions}{repetitions}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::repetitions}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a074e85e93ba222cfa7aa3a2a04453f6d}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a074e85e93ba222cfa7aa3a2a04453f6d}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!report\_big\_o@{report\_big\_o}}
+\index{report\_big\_o@{report\_big\_o}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{report\_big\_o}{report\_big\_o}}
+{\footnotesize\ttfamily bool benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::report\+\_\+big\+\_\+o}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_ad32adb9cae391e8b2cf889990dee413c}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_ad32adb9cae391e8b2cf889990dee413c}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!report\_label@{report\_label}}
+\index{report\_label@{report\_label}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{report\_label}{report\_label}}
+{\footnotesize\ttfamily std\+::string benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::report\+\_\+label}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a63312dd9b92f8205abd9b2e2ba924570}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a63312dd9b92f8205abd9b2e2ba924570}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!report\_rms@{report\_rms}}
+\index{report\_rms@{report\_rms}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{report\_rms}{report\_rms}}
+{\footnotesize\ttfamily bool benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::report\+\_\+rms}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a9495d6d81e1e9fe68e6c28161e42cb91}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a9495d6d81e1e9fe68e6c28161e42cb91}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!run\_name@{run\_name}}
+\index{run\_name@{run\_name}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{run\_name}{run\_name}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbenchmark_1_1BenchmarkName}{Benchmark\+Name}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::run\+\_\+name}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a0d0d5378a2e94beea53f0b5d01168c36}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a0d0d5378a2e94beea53f0b5d01168c36}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!run\_type@{run\_type}}
+\index{run\_type@{run\_type}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{run\_type}{run\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structbenchmark_1_1BenchmarkReporter_1_1Run_a1efbfaec4dc1866c2b8c54830bb25ab5}{Run\+Type}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::run\+\_\+type}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a56247b6fbd5a9020b5a248e2a7bb47bf}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a56247b6fbd5a9020b5a248e2a7bb47bf}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!skip\_message@{skip\_message}}
+\index{skip\_message@{skip\_message}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{skip\_message}{skip\_message}}
+{\footnotesize\ttfamily std\+::string benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::skip\+\_\+message}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a853003d5620465f90e77c72c2e99188b}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a853003d5620465f90e77c72c2e99188b}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!skipped@{skipped}}
+\index{skipped@{skipped}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{skipped}{skipped}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_1_1internal_aa75723707dc78caec482da86ecdea7e5}{internal\+::\+Skipped}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::skipped}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_a32943097f17561fa1794e7d8c438c946}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_a32943097f17561fa1794e7d8c438c946}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!statistics@{statistics}}
+\index{statistics@{statistics}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{statistics}{statistics}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{structbenchmark_1_1internal_1_1Statistics}{internal\+::\+Statistics}}$>$$\ast$ benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::statistics}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_aca09e8273c8ce2b00e1add41f7229cee}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_aca09e8273c8ce2b00e1add41f7229cee}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!threads@{threads}}
+\index{threads@{threads}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{threads}{threads}}
+{\footnotesize\ttfamily int64\+\_\+t benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::threads}
+
+\mbox{\Hypertarget{structbenchmark_1_1BenchmarkReporter_1_1Run_af988c9261cdffdab73edab984e6dac39}\label{structbenchmark_1_1BenchmarkReporter_1_1Run_af988c9261cdffdab73edab984e6dac39}} 
+\index{benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}!time\_unit@{time\_unit}}
+\index{time\_unit@{time\_unit}!benchmark::BenchmarkReporter::Run@{benchmark::BenchmarkReporter::Run}}
+\doxysubsubsection{\texorpdfstring{time\_unit}{time\_unit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}} benchmark\+::\+Benchmark\+Reporter\+::\+Run\+::time\+\_\+unit}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/\mbox{\hyperlink{benchmark_8h}{benchmark.\+h}}\item 
+build/\+\_\+deps/googlebenchmark-\/src/src/\mbox{\hyperlink{reporter_8cc}{reporter.\+cc}}\end{DoxyCompactItemize}

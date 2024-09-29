@@ -1,0 +1,27 @@
+\label{_perf-counters}%
+\hypertarget{md_build__deps_googlebenchmark_src_docs_perf_counters_autotoc_md14}{}\doxysection{User-\/\+Requested Performance Counters}\label{md_build__deps_googlebenchmark_src_docs_perf_counters_autotoc_md14}
+When running benchmarks, the user may choose to request collection of performance counters. This may be useful in investigation scenarios -\/ narrowing down the cause of a regression; or verifying that the underlying cause of a performance improvement matches expectations.
+
+This feature is available if\+:
+
+
+\begin{DoxyItemize}
+\item The benchmark is run on an architecture featuring a Performance Monitoring Unit (PMU),
+\item The benchmark is compiled with support for collecting counters. Currently, this requires \href{http://perfmon2.sourceforge.net/}{\texttt{ libpfm}}, which is built as a dependency via Bazel.
+\end{DoxyItemize}
+
+The feature does not require modifying benchmark code. \mbox{\hyperlink{classCounter}{Counter}} collection is handled at the boundaries where timer collection is also handled.
+
+To opt-\/in\+:
+\begin{DoxyItemize}
+\item If using a Bazel build, add {\ttfamily -\/-\/define pfm=1} to your build flags
+\item If using CMake\+:
+\begin{DoxyItemize}
+\item Install {\ttfamily libpfm4-\/dev}, e.\+g. {\ttfamily apt-\/get install libpfm4-\/dev}.
+\item Enable the CMake flag {\ttfamily BENCHMARK\+\_\+\+ENABLE\+\_\+\+LIBPFM} in {\ttfamily CMake\+Lists.\+txt}.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+To use, pass a comma-\/separated list of counter names through the {\ttfamily -\/-\/benchmark\+\_\+perf\+\_\+counters} flag. The names are decoded through libpfm -\/ meaning, they are platform specific, but some (e.\+g. {\ttfamily CYCLES} or {\ttfamily INSTRUCTIONS}) are mapped by libpfm to platform-\/specifics -\/ see libpfm \href{http://perfmon2.sourceforge.net/docs.html}{\texttt{ documentation}} for more details.
+
+The counter values are reported back through the \href{../README.md\#custom-counters}{\texttt{ User Counters}} mechanism, meaning, they are available in all the formats (e.\+g. JSON) supported by User Counters. 

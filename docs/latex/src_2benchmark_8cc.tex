@@ -1,0 +1,141 @@
+\hypertarget{src_2benchmark_8cc}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/src/benchmark.cc File Reference}
+\label{src_2benchmark_8cc}\index{build/\_deps/googlebenchmark-\/src/src/benchmark.cc@{build/\_deps/googlebenchmark-\/src/src/benchmark.cc}}
+{\ttfamily \#include \char`\"{}benchmark/benchmark.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}benchmark\+\_\+api\+\_\+internal.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}benchmark\+\_\+runner.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}internal\+\_\+macros.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/resource.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include \char`\"{}check.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}colorprint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}commandlineflags.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}complexity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mutex.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}perf\+\_\+counters.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}re.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}statistics.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}string\+\_\+util.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thread\+\_\+manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}thread\+\_\+timer.\+h\char`\"{}}\newline
+Include dependency graph for benchmark.\+cc\+:
+% FIG 0
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacebenchmark}{benchmark}}
+\item 
+ \mbox{\hyperlink{namespacebenchmark_1_1internal}{benchmark\+::internal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacebenchmark_aeb7540a5aa3898e30f7983805845e0d0}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+bool}} (benchmark\+\_\+list\+\_\+tests, false)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a4c0f137ab91e8d4277ac3ea0bba40e30}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+filter, \char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a7157fc74f8344c695a161d687cc892c8}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+min\+\_\+time, k\+Default\+Min\+Time\+Str)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a0e3a0a682d76f9963cdf4fa280da50eb}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+double}} (benchmark\+\_\+min\+\_\+warmup\+\_\+time, 0.\+0)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a107df54b1f7f3f8a65770cf7342f5040}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+int32}} (benchmark\+\_\+repetitions, 1)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a21e0b7b85289ddbb6ee984faed3e9bf6}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+bool}} (benchmark\+\_\+enable\+\_\+random\+\_\+interleaving, false)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a874e894fdb75ae4e48c50f074ebaee9b}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+bool}} (benchmark\+\_\+report\+\_\+aggregates\+\_\+only, false)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a5fa4b2f78ee6d054fc54f33164deb82e}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+bool}} (benchmark\+\_\+display\+\_\+aggregates\+\_\+only, false)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a268355e440bd240459bf8891e249be9b}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+format, \char`\"{}console\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a7d0a8f4b76eb6559d6cd9c5889ee66f0}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+out\+\_\+format, \char`\"{}json\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_adcb16821d74b5cc4bc5218cadaba3d77}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+out, \char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a53e4804377da9ab38a2f473eb07f3c00}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+color, \char`\"{}auto\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a3cbc610e1fb528a885dec7880e080274}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+bool}} (benchmark\+\_\+counters\+\_\+tabular, false)
+\item 
+\mbox{\hyperlink{namespacebenchmark_a6d88bf0ec444d13eeeaaef025506eeb1}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+perf\+\_\+counters, \char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a119eab60a9138c5cf5d496fbd496df4f}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+kvpairs}} (benchmark\+\_\+context, \{\})
+\item 
+\mbox{\hyperlink{namespacebenchmark_a18a4f1ae975371993c8e478031015ae6}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+string}} (benchmark\+\_\+time\+\_\+unit, \char`\"{}\char`\"{})
+\item 
+\mbox{\hyperlink{namespacebenchmark_ab22285eddb9301b69c95853b85e47d72}{benchmark\+::\+BM\+\_\+\+DEFINE\+\_\+int32}} (v, 0)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} std\+::map$<$ std\+::string, std\+::string $>$ $\ast$\& \mbox{\hyperlink{namespacebenchmark_1_1internal_ae9456fb4e3ae385f454c83098edc3b65}{benchmark\+::internal\+::\+Get\+Global\+Context}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_1_1internal_a3ba425ef5904ccc9db9abe934810ee1c}{benchmark\+::internal\+::\+Use\+Char\+Pointer}} (char const volatile $\ast$)
+\item 
+bool \mbox{\hyperlink{namespacebenchmark_1_1internal_a9752638e045ef1a8d9f8a8f115e99217}{benchmark\+::internal\+::\+Is\+Zero}} (double n)
+\item 
+Console\+Reporter\+::\+Output\+Options \mbox{\hyperlink{namespacebenchmark_1_1internal_a6de94b69434551a16bb5e28659a5008b}{benchmark\+::internal\+::\+Get\+Output\+Options}} (bool force\+\_\+no\+\_\+color)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} Benchmark\+Reporter $\ast$ \mbox{\hyperlink{namespacebenchmark_a655b43d8db70b56ddc45a986fa9c72d3}{benchmark\+::\+Create\+Default\+Display\+Reporter}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_a1de232e104bb86fe755b411b9cce3909}{benchmark\+::\+Run\+Specified\+Benchmarks}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_ac6e087184ed662ae0e3627148de03b33}{benchmark\+::\+Run\+Specified\+Benchmarks}} (std\+::string spec)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_ae9997efb2eb70a8a9c7a1fc1a11d160e}{benchmark\+::\+Run\+Specified\+Benchmarks}} (Benchmark\+Reporter $\ast$display\+\_\+reporter)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_a0a91e80ae956846e690653b76b923023}{benchmark\+::\+Run\+Specified\+Benchmarks}} (Benchmark\+Reporter $\ast$display\+\_\+reporter, std\+::string spec)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_a7a94030f03de4bec02a342c99178d018}{benchmark\+::\+Run\+Specified\+Benchmarks}} (Benchmark\+Reporter $\ast$display\+\_\+reporter, Benchmark\+Reporter $\ast$file\+\_\+reporter)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} size\+\_\+t \mbox{\hyperlink{namespacebenchmark_a29b6a7a797126f658ca82c86109f942d}{benchmark\+::\+Run\+Specified\+Benchmarks}} (Benchmark\+Reporter $\ast$display\+\_\+reporter, Benchmark\+Reporter $\ast$file\+\_\+reporter, std\+::string spec)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} Time\+Unit \mbox{\hyperlink{namespacebenchmark_ac09d235ba1803f2696d9042e8ac99f26}{benchmark\+::\+Get\+Default\+Time\+Unit}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_ad583e6febea2d6d7cacd6166a7aed069}{benchmark\+::\+Set\+Default\+Time\+Unit}} (Time\+Unit unit)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} std\+::string \mbox{\hyperlink{namespacebenchmark_a335449a4d78266c0b55f6e28fd6dac6a}{benchmark\+::\+Get\+Benchmark\+Filter}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a378e4d36752d749eb674e66b03353064}{benchmark\+::\+Set\+Benchmark\+Filter}} (std\+::string \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} int32\+\_\+t \mbox{\hyperlink{namespacebenchmark_aa51aa7a83e5a8246124bd1805ee52f14}{benchmark\+::\+Get\+Benchmark\+Verbosity}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a58d491db4af487b49330ecad9a9475c3}{benchmark\+::\+Register\+Memory\+Manager}} (Memory\+Manager $\ast$memory\+\_\+manager)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a765bea1e6b5106eb7582b89bc90b902b}{benchmark\+::\+Add\+Custom\+Context}} (const std\+::string \&key, const std\+::string \&\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+void \mbox{\hyperlink{namespacebenchmark_1_1internal_a1be1bd73a89dc9ad7db4a17e553abeae}{benchmark\+::internal\+::\+Print\+Usage\+And\+Exit}} ()
+\item 
+void \mbox{\hyperlink{namespacebenchmark_1_1internal_a881c1c3dd3d68744fbaca87dc6e3bb4a}{benchmark\+::internal\+::\+Set\+Default\+Time\+Unit\+From\+Flag}} (const std\+::string \&time\+\_\+unit\+\_\+flag)
+\item 
+void \mbox{\hyperlink{namespacebenchmark_1_1internal_a516c4cf24ba4916dcce851336371fae3}{benchmark\+::internal\+::\+Parse\+Command\+Line\+Flags}} (int $\ast$argc, char $\ast$$\ast$argv)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} int \mbox{\hyperlink{namespacebenchmark_1_1internal_aad5e0c05236fd7bf317ac1772a892513}{benchmark\+::internal\+::\+Initialize\+Streams}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a329d45c39fc7a239641f5a5e9fb759d6}{benchmark\+::\+Print\+Default\+Help}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a7d409e9521d536fe1aae8f0e37608385}{benchmark\+::\+Initialize}} (int $\ast$argc, char $\ast$$\ast$argv, void($\ast$Helper\+Printerf)()=Print\+Default\+Help)
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} void \mbox{\hyperlink{namespacebenchmark_a65eb62415b91707a75c471bb9d48bf62}{benchmark\+::\+Shutdown}} ()
+\item 
+\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} bool \mbox{\hyperlink{namespacebenchmark_a191f0b12043dc5012af2cb58e978c479}{benchmark\+::\+Report\+Unrecognized\+Arguments}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ $\ast$ \mbox{\hyperlink{namespacebenchmark_1_1internal_a6159e57f0235d4ab9c14e7c9692d9c13}{benchmark\+::internal\+::global\+\_\+context}} = nullptr
+\item 
+void($\ast$ \mbox{\hyperlink{namespacebenchmark_1_1internal_a4beaad669381c2185d00ce5041e1a132}{benchmark\+::internal\+::\+Helper\+Printf}} )()
+\end{DoxyCompactItemize}

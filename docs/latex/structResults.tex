@@ -1,0 +1,143 @@
+\hypertarget{structResults}{}\doxysection{Results Struct Reference}
+\label{structResults}\index{Results@{Results}}
+
+
+{\ttfamily \#include $<$output\+\_\+test.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242da}{Benchmark\+Time}} \{ \mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242daa2842e794c6f6b1a62d2a4a6ed80c29b1}{k\+Cpu\+Time}}
+, \mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242daa63df237c38be6fd9b3d0828c71e85bbc}{k\+Real\+Time}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structResults_ae74936508eee59aef237b9a97918b1f4}{Results}} (const std\+::string \&n)
+\item 
+int \mbox{\hyperlink{structResults_af9d95a81ff815cccc953b130b87d2477}{Num\+Threads}} () const
+\item 
+double \mbox{\hyperlink{structResults_a740aa82119121fba847eeea5f43193c0}{Num\+Iterations}} () const
+\item 
+double \mbox{\hyperlink{structResults_a96f9ca91ceb864d4a49258de66b7e458}{Get\+Time}} (\mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242da}{Benchmark\+Time}} which) const
+\item 
+double \mbox{\hyperlink{structResults_a58c33df2fe6d1559451daa86d8c6ec78}{Duration\+Real\+Time}} () const
+\item 
+double \mbox{\hyperlink{structResults_ad4397a4d444cad04d8d609edad85764e}{Duration\+CPUTime}} () const
+\item 
+const std\+::string $\ast$ \mbox{\hyperlink{structResults_a6bbc5595696d0e73928f7ce9540768b9}{Get}} (const std\+::string \&entry\+\_\+name) const
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{structResults_acd3b6634fb1517a12228a3abaf444d17}{Get\+As}} (const std\+::string \&entry\+\_\+name) const
+\item 
+{\footnotesize template$<$class T $>$ }\\T \mbox{\hyperlink{structResults_a8bc7604bb90aef28ba85cd959b1f4f44}{Get\+Counter\+As}} (const std\+::string \&entry\+\_\+name) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structResults_a68bd7c4a9181d6819dac5842d2c447de}{name}}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{structResults_a888a1cb63554f4572c6355bb2a715d1e}{values}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structResults_a04a2fff25804a0f3b438cda9299242da}\label{structResults_a04a2fff25804a0f3b438cda9299242da}} 
+\index{Results@{Results}!BenchmarkTime@{BenchmarkTime}}
+\index{BenchmarkTime@{BenchmarkTime}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{BenchmarkTime}{BenchmarkTime}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242da}{Results\+::\+Benchmark\+Time}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kCpuTime@{kCpuTime}!Results@{Results}}\index{Results@{Results}!kCpuTime@{kCpuTime}}}\mbox{\Hypertarget{structResults_a04a2fff25804a0f3b438cda9299242daa2842e794c6f6b1a62d2a4a6ed80c29b1}\label{structResults_a04a2fff25804a0f3b438cda9299242daa2842e794c6f6b1a62d2a4a6ed80c29b1}} 
+k\+Cpu\+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRealTime@{kRealTime}!Results@{Results}}\index{Results@{Results}!kRealTime@{kRealTime}}}\mbox{\Hypertarget{structResults_a04a2fff25804a0f3b438cda9299242daa63df237c38be6fd9b3d0828c71e85bbc}\label{structResults_a04a2fff25804a0f3b438cda9299242daa63df237c38be6fd9b3d0828c71e85bbc}} 
+k\+Real\+Time&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structResults_ae74936508eee59aef237b9a97918b1f4}\label{structResults_ae74936508eee59aef237b9a97918b1f4}} 
+\index{Results@{Results}!Results@{Results}}
+\index{Results@{Results}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{Results()}{Results()}}
+{\footnotesize\ttfamily Results\+::\+Results (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structResults_ad4397a4d444cad04d8d609edad85764e}\label{structResults_ad4397a4d444cad04d8d609edad85764e}} 
+\index{Results@{Results}!DurationCPUTime@{DurationCPUTime}}
+\index{DurationCPUTime@{DurationCPUTime}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{DurationCPUTime()}{DurationCPUTime()}}
+{\footnotesize\ttfamily double Results\+::\+Duration\+CPUTime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structResults_a58c33df2fe6d1559451daa86d8c6ec78}\label{structResults_a58c33df2fe6d1559451daa86d8c6ec78}} 
+\index{Results@{Results}!DurationRealTime@{DurationRealTime}}
+\index{DurationRealTime@{DurationRealTime}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{DurationRealTime()}{DurationRealTime()}}
+{\footnotesize\ttfamily double Results\+::\+Duration\+Real\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structResults_a6bbc5595696d0e73928f7ce9540768b9}\label{structResults_a6bbc5595696d0e73928f7ce9540768b9}} 
+\index{Results@{Results}!Get@{Get}}
+\index{Get@{Get}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily const std\+::string$\ast$ Results\+::\+Get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{entry\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structResults_acd3b6634fb1517a12228a3abaf444d17}\label{structResults_acd3b6634fb1517a12228a3abaf444d17}} 
+\index{Results@{Results}!GetAs@{GetAs}}
+\index{GetAs@{GetAs}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{GetAs()}{GetAs()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T Results\+::\+Get\+As (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{entry\+\_\+name }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structResults_a8bc7604bb90aef28ba85cd959b1f4f44}\label{structResults_a8bc7604bb90aef28ba85cd959b1f4f44}} 
+\index{Results@{Results}!GetCounterAs@{GetCounterAs}}
+\index{GetCounterAs@{GetCounterAs}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{GetCounterAs()}{GetCounterAs()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T Results\+::\+Get\+Counter\+As (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{entry\+\_\+name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structResults_a96f9ca91ceb864d4a49258de66b7e458}\label{structResults_a96f9ca91ceb864d4a49258de66b7e458}} 
+\index{Results@{Results}!GetTime@{GetTime}}
+\index{GetTime@{GetTime}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{GetTime()}{GetTime()}}
+{\footnotesize\ttfamily double Results\+::\+Get\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structResults_a04a2fff25804a0f3b438cda9299242da}{Benchmark\+Time}}}]{which }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structResults_a740aa82119121fba847eeea5f43193c0}\label{structResults_a740aa82119121fba847eeea5f43193c0}} 
+\index{Results@{Results}!NumIterations@{NumIterations}}
+\index{NumIterations@{NumIterations}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{NumIterations()}{NumIterations()}}
+{\footnotesize\ttfamily double Results\+::\+Num\+Iterations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{structResults_af9d95a81ff815cccc953b130b87d2477}\label{structResults_af9d95a81ff815cccc953b130b87d2477}} 
+\index{Results@{Results}!NumThreads@{NumThreads}}
+\index{NumThreads@{NumThreads}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{NumThreads()}{NumThreads()}}
+{\footnotesize\ttfamily int Results\+::\+Num\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structResults_a68bd7c4a9181d6819dac5842d2c447de}\label{structResults_a68bd7c4a9181d6819dac5842d2c447de}} 
+\index{Results@{Results}!name@{name}}
+\index{name@{name}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Results\+::name}
+
+\mbox{\Hypertarget{structResults_a888a1cb63554f4572c6355bb2a715d1e}\label{structResults_a888a1cb63554f4572c6355bb2a715d1e}} 
+\index{Results@{Results}!values@{values}}
+\index{values@{values}!Results@{Results}}
+\doxysubsubsection{\texorpdfstring{values}{values}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ Results\+::values}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+build/\+\_\+deps/googlebenchmark-\/src/test/\mbox{\hyperlink{output__test_8h}{output\+\_\+test.\+h}}\item 
+build/\+\_\+deps/googlebenchmark-\/src/test/\mbox{\hyperlink{output__test__helper_8cc}{output\+\_\+test\+\_\+helper.\+cc}}\end{DoxyCompactItemize}

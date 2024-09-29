@@ -1,0 +1,25 @@
+digraph "benchmark::internal::Benchmark"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="benchmark::internal\l::Benchmark",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="benchmark::Fixture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbenchmark_1_1Fixture.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ArgsProductFixture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classArgsProductFixture.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="BM_Fixture\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structBM__Fixture.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="FIXTURE_BECHMARK_NAME",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFIXTURE__BECHMARK__NAME.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="MapFixture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMapFixture.html",tooltip=" "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="MultipleRangesFixture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMultipleRangesFixture.html",tooltip=" "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="MyFixture\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMyFixture.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="benchmark::internal\l::FunctionBenchmark",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classbenchmark_1_1internal_1_1FunctionBenchmark.html",tooltip=" "];
+}

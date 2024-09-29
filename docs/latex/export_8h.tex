@@ -1,0 +1,82 @@
+\hypertarget{export_8h}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/export.h File Reference}
+\label{export_8h}\index{build/\_deps/googlebenchmark-\/src/include/benchmark/export.h@{build/\_deps/googlebenchmark-\/src/include/benchmark/export.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{export_8h_abef115fe3b8b71411890a2dbf037e8d1}{EXPORT\+\_\+\+ATTR}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{})))
+\item 
+\#define \mbox{\hyperlink{export_8h_aff4aa51a35b871567029aadf248f0381}{IMPORT\+\_\+\+ATTR}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{})))
+\item 
+\#define \mbox{\hyperlink{export_8h_a3e941886d515a23f04f260963535b43c}{NO\+\_\+\+EXPORT\+\_\+\+ATTR}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}hidden\char`\"{})))
+\item 
+\#define \mbox{\hyperlink{export_8h_af864865ab4b769c64ac44785b1722562}{DEPRECATE\+\_\+\+ATTR}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((\+\_\+\+\_\+deprecated\+\_\+\+\_\+))
+\item 
+\#define \mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}}~\mbox{\hyperlink{export_8h_aff4aa51a35b871567029aadf248f0381}{IMPORT\+\_\+\+ATTR}}
+\item 
+\#define \mbox{\hyperlink{export_8h_ac53e30c1703d918e5d5af53a541b69a1}{BENCHMARK\+\_\+\+NO\+\_\+\+EXPORT}}~\mbox{\hyperlink{export_8h_a3e941886d515a23f04f260963535b43c}{NO\+\_\+\+EXPORT\+\_\+\+ATTR}}
+\item 
+\#define \mbox{\hyperlink{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}{BENCHMARK\+\_\+\+DEPRECATED}}~\mbox{\hyperlink{export_8h_af864865ab4b769c64ac44785b1722562}{DEPRECATE\+\_\+\+ATTR}}
+\item 
+\#define \mbox{\hyperlink{export_8h_ad6f690441b1b12dfd69bed02863c398e}{BENCHMARK\+\_\+\+DEPRECATED\+\_\+\+EXPORT}}~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} \mbox{\hyperlink{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}{BENCHMARK\+\_\+\+DEPRECATED}}
+\item 
+\#define \mbox{\hyperlink{export_8h_aa1f2f1a9e8212004cc5789fc2dba1879}{BENCHMARK\+\_\+\+DEPRECATED\+\_\+\+NO\+\_\+\+EXPORT}}~\mbox{\hyperlink{export_8h_ac53e30c1703d918e5d5af53a541b69a1}{BENCHMARK\+\_\+\+NO\+\_\+\+EXPORT}} \mbox{\hyperlink{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}{BENCHMARK\+\_\+\+DEPRECATED}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}\label{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}} 
+\index{export.h@{export.h}!BENCHMARK\_DEPRECATED@{BENCHMARK\_DEPRECATED}}
+\index{BENCHMARK\_DEPRECATED@{BENCHMARK\_DEPRECATED}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK\_DEPRECATED}{BENCHMARK\_DEPRECATED}}
+{\footnotesize\ttfamily \#define BENCHMARK\+\_\+\+DEPRECATED~\mbox{\hyperlink{export_8h_af864865ab4b769c64ac44785b1722562}{DEPRECATE\+\_\+\+ATTR}}}
+
+\mbox{\Hypertarget{export_8h_ad6f690441b1b12dfd69bed02863c398e}\label{export_8h_ad6f690441b1b12dfd69bed02863c398e}} 
+\index{export.h@{export.h}!BENCHMARK\_DEPRECATED\_EXPORT@{BENCHMARK\_DEPRECATED\_EXPORT}}
+\index{BENCHMARK\_DEPRECATED\_EXPORT@{BENCHMARK\_DEPRECATED\_EXPORT}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK\_DEPRECATED\_EXPORT}{BENCHMARK\_DEPRECATED\_EXPORT}}
+{\footnotesize\ttfamily \#define BENCHMARK\+\_\+\+DEPRECATED\+\_\+\+EXPORT~\mbox{\hyperlink{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}{BENCHMARK\+\_\+\+EXPORT}} \mbox{\hyperlink{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}{BENCHMARK\+\_\+\+DEPRECATED}}}
+
+\mbox{\Hypertarget{export_8h_aa1f2f1a9e8212004cc5789fc2dba1879}\label{export_8h_aa1f2f1a9e8212004cc5789fc2dba1879}} 
+\index{export.h@{export.h}!BENCHMARK\_DEPRECATED\_NO\_EXPORT@{BENCHMARK\_DEPRECATED\_NO\_EXPORT}}
+\index{BENCHMARK\_DEPRECATED\_NO\_EXPORT@{BENCHMARK\_DEPRECATED\_NO\_EXPORT}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK\_DEPRECATED\_NO\_EXPORT}{BENCHMARK\_DEPRECATED\_NO\_EXPORT}}
+{\footnotesize\ttfamily \#define BENCHMARK\+\_\+\+DEPRECATED\+\_\+\+NO\+\_\+\+EXPORT~\mbox{\hyperlink{export_8h_ac53e30c1703d918e5d5af53a541b69a1}{BENCHMARK\+\_\+\+NO\+\_\+\+EXPORT}} \mbox{\hyperlink{export_8h_aa5febe2ce52243b9f4769d1faea83aaf}{BENCHMARK\+\_\+\+DEPRECATED}}}
+
+\mbox{\Hypertarget{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}\label{export_8h_ace5b9aa877e9e60b8139ca2efcd0ab18}} 
+\index{export.h@{export.h}!BENCHMARK\_EXPORT@{BENCHMARK\_EXPORT}}
+\index{BENCHMARK\_EXPORT@{BENCHMARK\_EXPORT}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK\_EXPORT}{BENCHMARK\_EXPORT}}
+{\footnotesize\ttfamily \#define BENCHMARK\+\_\+\+EXPORT~\mbox{\hyperlink{export_8h_aff4aa51a35b871567029aadf248f0381}{IMPORT\+\_\+\+ATTR}}}
+
+\mbox{\Hypertarget{export_8h_ac53e30c1703d918e5d5af53a541b69a1}\label{export_8h_ac53e30c1703d918e5d5af53a541b69a1}} 
+\index{export.h@{export.h}!BENCHMARK\_NO\_EXPORT@{BENCHMARK\_NO\_EXPORT}}
+\index{BENCHMARK\_NO\_EXPORT@{BENCHMARK\_NO\_EXPORT}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK\_NO\_EXPORT}{BENCHMARK\_NO\_EXPORT}}
+{\footnotesize\ttfamily \#define BENCHMARK\+\_\+\+NO\+\_\+\+EXPORT~\mbox{\hyperlink{export_8h_a3e941886d515a23f04f260963535b43c}{NO\+\_\+\+EXPORT\+\_\+\+ATTR}}}
+
+\mbox{\Hypertarget{export_8h_af864865ab4b769c64ac44785b1722562}\label{export_8h_af864865ab4b769c64ac44785b1722562}} 
+\index{export.h@{export.h}!DEPRECATE\_ATTR@{DEPRECATE\_ATTR}}
+\index{DEPRECATE\_ATTR@{DEPRECATE\_ATTR}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{DEPRECATE\_ATTR}{DEPRECATE\_ATTR}}
+{\footnotesize\ttfamily \#define DEPRECATE\+\_\+\+ATTR~\+\_\+\+\_\+attribute\+\_\+\+\_\+((\+\_\+\+\_\+deprecated\+\_\+\+\_\+))}
+
+\mbox{\Hypertarget{export_8h_abef115fe3b8b71411890a2dbf037e8d1}\label{export_8h_abef115fe3b8b71411890a2dbf037e8d1}} 
+\index{export.h@{export.h}!EXPORT\_ATTR@{EXPORT\_ATTR}}
+\index{EXPORT\_ATTR@{EXPORT\_ATTR}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{EXPORT\_ATTR}{EXPORT\_ATTR}}
+{\footnotesize\ttfamily \#define EXPORT\+\_\+\+ATTR~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{})))}
+
+\mbox{\Hypertarget{export_8h_aff4aa51a35b871567029aadf248f0381}\label{export_8h_aff4aa51a35b871567029aadf248f0381}} 
+\index{export.h@{export.h}!IMPORT\_ATTR@{IMPORT\_ATTR}}
+\index{IMPORT\_ATTR@{IMPORT\_ATTR}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{IMPORT\_ATTR}{IMPORT\_ATTR}}
+{\footnotesize\ttfamily \#define IMPORT\+\_\+\+ATTR~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}default\char`\"{})))}
+
+\mbox{\Hypertarget{export_8h_a3e941886d515a23f04f260963535b43c}\label{export_8h_a3e941886d515a23f04f260963535b43c}} 
+\index{export.h@{export.h}!NO\_EXPORT\_ATTR@{NO\_EXPORT\_ATTR}}
+\index{NO\_EXPORT\_ATTR@{NO\_EXPORT\_ATTR}!export.h@{export.h}}
+\doxysubsubsection{\texorpdfstring{NO\_EXPORT\_ATTR}{NO\_EXPORT\_ATTR}}
+{\footnotesize\ttfamily \#define NO\+\_\+\+EXPORT\+\_\+\+ATTR~\+\_\+\+\_\+attribute\+\_\+\+\_\+((visibility(\char`\"{}hidden\char`\"{})))}
+

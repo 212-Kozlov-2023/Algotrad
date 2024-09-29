@@ -1,0 +1,374 @@
+\hypertarget{classbenchmark_1_1internal_1_1Benchmark}{}\doxysection{benchmark\+::internal\+::Benchmark Class Reference}
+\label{classbenchmark_1_1internal_1_1Benchmark}\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+
+
+{\ttfamily \#include $<$benchmark.\+h$>$}
+
+
+
+Inheritance diagram for benchmark\+::internal\+::Benchmark\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a6a754f5cc9c4f1babfff89ac7ad8e716}{$\sim$\+Benchmark}} ()
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a17e958308acdbf21ac9672e00683b0bd}{Name}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a04ce6e5947d36536de58269d38970b53}{Arg}} (int64\+\_\+t \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}})
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_afc2e5f06dc44477c32841a06eb1699db}{Unit}} (\mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}} unit)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a146f564908e0930558008873a97fb0dc}{Range}} (int64\+\_\+t start, int64\+\_\+t limit)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a5b07a49965a7c6ddfc567ebdb790d4ab}{Dense\+Range}} (int64\+\_\+t start, int64\+\_\+t limit, int step=1)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a5553f1179d85b8220c0a545e6b5c7534}{Args}} (const std\+::vector$<$ int64\+\_\+t $>$ \&args)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a02066274cd4520082dcc979adce2391e}{Arg\+Pair}} (int64\+\_\+t \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}, int64\+\_\+t \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_ae8eef1c942ee629396d5ac6730376468}{Ranges}} (const std\+::vector$<$ std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ $>$ \&ranges)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_add17f094b3408cba6f1e82e8264e8bec}{Args\+Product}} (const std\+::vector$<$ std\+::vector$<$ int64\+\_\+t $>$ $>$ \&arglists)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a0fa63032fd00e19dc0d06409bc845280}{Arg\+Name}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a40bc9792fa6238019f6929c91495f9f3}{Arg\+Names}} (const std\+::vector$<$ std\+::string $>$ \&names)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_aabe857dae2b5f13350f3af820d3351af}{Range\+Pair}} (int64\+\_\+t lo1, int64\+\_\+t hi1, int64\+\_\+t lo2, int64\+\_\+t hi2)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a871ed1efb91da54cca4df492c7c8b316}{Setup}} (void($\ast$setup)(const \mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&))
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a5adf1135ca9dd10ebd61e59a358b6000}{Teardown}} (void($\ast$teardown)(const \mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&))
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_aa9c01a213620e85d166d7f3c0ccfc7b1}{Apply}} (void($\ast$func)(\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$benchmark))
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a9d8fd4d8b2fe3d09714acf7a4001c9f3}{Range\+Multiplier}} (int multiplier)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a096f560a82f932f85bc77574b7a4c3e0}{Min\+Time}} (double t)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a16da91fafab75dfb22dbe8459e0722f2}{Min\+Warm\+Up\+Time}} (double t)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a55a865cb9ea8f2c63e7cebf7343e4268}{Iterations}} (\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}} n)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a8c0d150fe8b80b9ea81060ab5e2c7e24}{Repetitions}} (int n)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a995b0d6ba227885b0409a7e1a286fed6}{Report\+Aggregates\+Only}} (bool \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}=true)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_af77ab58031421b5c335eae0869ee0770}{Display\+Aggregates\+Only}} (bool \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}=true)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a93814556d5b02bbc36133bdea196d35c}{Measure\+Process\+CPUTime}} ()
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_ab6f2a1002a46d6b946f949d12deadfd7}{Use\+Real\+Time}} ()
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_add023088c2c7a248c685cf70887d82e4}{Use\+Manual\+Time}} ()
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a54ce2fd464acb3c85736f789612ea93e}{Complexity}} (\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5}{BigO}} complexity=\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ad82c87450f8b4e4010418e2b47b28050}{benchmark\+::o\+Auto}})
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a40e932775fc339c7843e9b15ed3c0161}{Complexity}} (\mbox{\hyperlink{namespacebenchmark_a0dd20052d0c23b292a757ed789d23563}{Big\+OFunc}} $\ast$complexity)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_aec197551e29abfa3c6cc4eb06b8bd2a2}{Compute\+Statistics}} (const std\+::string \&name, \mbox{\hyperlink{namespacebenchmark_a9fbb72cc545b6731797d307beac18065}{Statistics\+Func}} $\ast$statistics, \mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30}{Statistic\+Unit}} unit=\mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30a9b2617259bbfa1d264f31b31f7e4844d}{k\+Time}})
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_aaa3f1cde62b2ec57beb0552262e3f3bf}{Threads}} (int t)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a19c286203e174f81a0cc2933312fd6e1}{Thread\+Range}} (int min\+\_\+threads, int max\+\_\+threads)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a6c1742c840892844c87d910125d1b8b9}{Dense\+Thread\+Range}} (int min\+\_\+threads, int max\+\_\+threads, int stride=1)
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a1cd0207050adaf282f841611d44c2d02}{Thread\+Per\+Cpu}} ()
+\item 
+virtual void \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_abad572c7d962a8b626829992cab23366}{Run}} (\mbox{\hyperlink{classbenchmark_1_1State}{State}} \&state)=0
+\item 
+\mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}} \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a0ba4445dd600cb984b6dfeb3d2620c03}{Get\+Time\+Unit}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a0cc70125e1484c475266de829b3ee624}{Get\+Name}} () const
+\item 
+int \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a90ec48d73ba6886ae090c6bd48dd248d}{Args\+Cnt}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_abb7a80560641ee6ff7777d700d96991b}{Get\+Arg\+Name}} (int arg) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_ac695c2a54b91137ad065b524406a6ca3}{Benchmark}} (const std\+::string \&name)
+\item 
+void \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_a61ec1dece918a247317b3808ef9b608a}{Set\+Name}} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_aec4a1eb2b1fe7d35acebfdc65d6746c8}{Benchmark\+Families}}
+\item 
+class \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark_acd4d57ec25420b534ff4aefc617149b2}{Benchmark\+Instance}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a6a754f5cc9c4f1babfff89ac7ad8e716}\label{classbenchmark_1_1internal_1_1Benchmark_a6a754f5cc9c4f1babfff89ac7ad8e716}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!````~Benchmark@{$\sim$Benchmark}}
+\index{````~Benchmark@{$\sim$Benchmark}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{$\sim$Benchmark()}{~Benchmark()}}
+{\footnotesize\ttfamily benchmark\+::internal\+::\+Benchmark\+::$\sim$\+Benchmark (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_ac695c2a54b91137ad065b524406a6ca3}\label{classbenchmark_1_1internal_1_1Benchmark_ac695c2a54b91137ad065b524406a6ca3}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Benchmark@{Benchmark}}
+\index{Benchmark@{Benchmark}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Benchmark()}{Benchmark()}}
+{\footnotesize\ttfamily benchmark\+::internal\+::\+Benchmark\+::\+Benchmark (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_aa9c01a213620e85d166d7f3c0ccfc7b1}\label{classbenchmark_1_1internal_1_1Benchmark_aa9c01a213620e85d166d7f3c0ccfc7b1}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Apply@{Apply}}
+\index{Apply@{Apply}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Apply (\begin{DoxyParamCaption}\item[{void($\ast$)(\mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$benchmark)}]{func }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a04ce6e5947d36536de58269d38970b53}\label{classbenchmark_1_1internal_1_1Benchmark_a04ce6e5947d36536de58269d38970b53}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Arg@{Arg}}
+\index{Arg@{Arg}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Arg()}{Arg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Arg (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a0fa63032fd00e19dc0d06409bc845280}\label{classbenchmark_1_1internal_1_1Benchmark_a0fa63032fd00e19dc0d06409bc845280}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ArgName@{ArgName}}
+\index{ArgName@{ArgName}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ArgName()}{ArgName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Arg\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a40bc9792fa6238019f6929c91495f9f3}\label{classbenchmark_1_1internal_1_1Benchmark_a40bc9792fa6238019f6929c91495f9f3}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ArgNames@{ArgNames}}
+\index{ArgNames@{ArgNames}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ArgNames()}{ArgNames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Arg\+Names (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{names }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a02066274cd4520082dcc979adce2391e}\label{classbenchmark_1_1internal_1_1Benchmark_a02066274cd4520082dcc979adce2391e}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ArgPair@{ArgPair}}
+\index{ArgPair@{ArgPair}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ArgPair()}{ArgPair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}}$\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Arg\+Pair (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{x,  }\item[{int64\+\_\+t}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a5553f1179d85b8220c0a545e6b5c7534}\label{classbenchmark_1_1internal_1_1Benchmark_a5553f1179d85b8220c0a545e6b5c7534}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Args@{Args}}
+\index{Args@{Args}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Args()}{Args()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Args (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int64\+\_\+t $>$ \&}]{args }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a90ec48d73ba6886ae090c6bd48dd248d}\label{classbenchmark_1_1internal_1_1Benchmark_a90ec48d73ba6886ae090c6bd48dd248d}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ArgsCnt@{ArgsCnt}}
+\index{ArgsCnt@{ArgsCnt}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ArgsCnt()}{ArgsCnt()}}
+{\footnotesize\ttfamily int benchmark\+::internal\+::\+Benchmark\+::\+Args\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_add17f094b3408cba6f1e82e8264e8bec}\label{classbenchmark_1_1internal_1_1Benchmark_add17f094b3408cba6f1e82e8264e8bec}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ArgsProduct@{ArgsProduct}}
+\index{ArgsProduct@{ArgsProduct}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ArgsProduct()}{ArgsProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Args\+Product (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int64\+\_\+t $>$ $>$ \&}]{arglists }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a54ce2fd464acb3c85736f789612ea93e}\label{classbenchmark_1_1internal_1_1Benchmark_a54ce2fd464acb3c85736f789612ea93e}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Complexity@{Complexity}}
+\index{Complexity@{Complexity}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Complexity()}{Complexity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Complexity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5}{BigO}}}]{complexity = {\ttfamily \mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ad82c87450f8b4e4010418e2b47b28050}{benchmark\+::o\+Auto}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a40e932775fc339c7843e9b15ed3c0161}\label{classbenchmark_1_1internal_1_1Benchmark_a40e932775fc339c7843e9b15ed3c0161}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Complexity@{Complexity}}
+\index{Complexity@{Complexity}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Complexity()}{Complexity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Complexity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacebenchmark_a0dd20052d0c23b292a757ed789d23563}{Big\+OFunc}} $\ast$}]{complexity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_aec197551e29abfa3c6cc4eb06b8bd2a2}\label{classbenchmark_1_1internal_1_1Benchmark_aec197551e29abfa3c6cc4eb06b8bd2a2}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ComputeStatistics@{ComputeStatistics}}
+\index{ComputeStatistics@{ComputeStatistics}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ComputeStatistics()}{ComputeStatistics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Compute\+Statistics (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{namespacebenchmark_a9fbb72cc545b6731797d307beac18065}{Statistics\+Func}} $\ast$}]{statistics,  }\item[{\mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30}{Statistic\+Unit}}}]{unit = {\ttfamily \mbox{\hyperlink{namespacebenchmark_abfd6feb393a95f1ddedf5a9054e19b30a9b2617259bbfa1d264f31b31f7e4844d}{k\+Time}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a5b07a49965a7c6ddfc567ebdb790d4ab}\label{classbenchmark_1_1internal_1_1Benchmark_a5b07a49965a7c6ddfc567ebdb790d4ab}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!DenseRange@{DenseRange}}
+\index{DenseRange@{DenseRange}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{DenseRange()}{DenseRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Dense\+Range (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{start,  }\item[{int64\+\_\+t}]{limit,  }\item[{int}]{step = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a6c1742c840892844c87d910125d1b8b9}\label{classbenchmark_1_1internal_1_1Benchmark_a6c1742c840892844c87d910125d1b8b9}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!DenseThreadRange@{DenseThreadRange}}
+\index{DenseThreadRange@{DenseThreadRange}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{DenseThreadRange()}{DenseThreadRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Dense\+Thread\+Range (\begin{DoxyParamCaption}\item[{int}]{min\+\_\+threads,  }\item[{int}]{max\+\_\+threads,  }\item[{int}]{stride = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_af77ab58031421b5c335eae0869ee0770}\label{classbenchmark_1_1internal_1_1Benchmark_af77ab58031421b5c335eae0869ee0770}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!DisplayAggregatesOnly@{DisplayAggregatesOnly}}
+\index{DisplayAggregatesOnly@{DisplayAggregatesOnly}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{DisplayAggregatesOnly()}{DisplayAggregatesOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Display\+Aggregates\+Only (\begin{DoxyParamCaption}\item[{bool}]{value = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_abb7a80560641ee6ff7777d700d96991b}\label{classbenchmark_1_1internal_1_1Benchmark_abb7a80560641ee6ff7777d700d96991b}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!GetArgName@{GetArgName}}
+\index{GetArgName@{GetArgName}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{GetArgName()}{GetArgName()}}
+{\footnotesize\ttfamily const char $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Get\+Arg\+Name (\begin{DoxyParamCaption}\item[{int}]{arg }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a0cc70125e1484c475266de829b3ee624}\label{classbenchmark_1_1internal_1_1Benchmark_a0cc70125e1484c475266de829b3ee624}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!GetName@{GetName}}
+\index{GetName@{GetName}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily const char $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a0ba4445dd600cb984b6dfeb3d2620c03}\label{classbenchmark_1_1internal_1_1Benchmark_a0ba4445dd600cb984b6dfeb3d2620c03}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!GetTimeUnit@{GetTimeUnit}}
+\index{GetTimeUnit@{GetTimeUnit}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{GetTimeUnit()}{GetTimeUnit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}} benchmark\+::internal\+::\+Benchmark\+::\+Get\+Time\+Unit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a55a865cb9ea8f2c63e7cebf7343e4268}\label{classbenchmark_1_1internal_1_1Benchmark_a55a865cb9ea8f2c63e7cebf7343e4268}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Iterations@{Iterations}}
+\index{Iterations@{Iterations}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Iterations()}{Iterations()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Iterations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{Iteration\+Count}}}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a93814556d5b02bbc36133bdea196d35c}\label{classbenchmark_1_1internal_1_1Benchmark_a93814556d5b02bbc36133bdea196d35c}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!MeasureProcessCPUTime@{MeasureProcessCPUTime}}
+\index{MeasureProcessCPUTime@{MeasureProcessCPUTime}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{MeasureProcessCPUTime()}{MeasureProcessCPUTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Measure\+Process\+CPUTime (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a096f560a82f932f85bc77574b7a4c3e0}\label{classbenchmark_1_1internal_1_1Benchmark_a096f560a82f932f85bc77574b7a4c3e0}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!MinTime@{MinTime}}
+\index{MinTime@{MinTime}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{MinTime()}{MinTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Min\+Time (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a16da91fafab75dfb22dbe8459e0722f2}\label{classbenchmark_1_1internal_1_1Benchmark_a16da91fafab75dfb22dbe8459e0722f2}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!MinWarmUpTime@{MinWarmUpTime}}
+\index{MinWarmUpTime@{MinWarmUpTime}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{MinWarmUpTime()}{MinWarmUpTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Min\+Warm\+Up\+Time (\begin{DoxyParamCaption}\item[{double}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a17e958308acdbf21ac9672e00683b0bd}\label{classbenchmark_1_1internal_1_1Benchmark_a17e958308acdbf21ac9672e00683b0bd}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Name@{Name}}
+\index{Name@{Name}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a146f564908e0930558008873a97fb0dc}\label{classbenchmark_1_1internal_1_1Benchmark_a146f564908e0930558008873a97fb0dc}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Range@{Range}}
+\index{Range@{Range}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Range (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{start,  }\item[{int64\+\_\+t}]{limit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a9d8fd4d8b2fe3d09714acf7a4001c9f3}\label{classbenchmark_1_1internal_1_1Benchmark_a9d8fd4d8b2fe3d09714acf7a4001c9f3}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!RangeMultiplier@{RangeMultiplier}}
+\index{RangeMultiplier@{RangeMultiplier}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{RangeMultiplier()}{RangeMultiplier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Range\+Multiplier (\begin{DoxyParamCaption}\item[{int}]{multiplier }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_aabe857dae2b5f13350f3af820d3351af}\label{classbenchmark_1_1internal_1_1Benchmark_aabe857dae2b5f13350f3af820d3351af}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!RangePair@{RangePair}}
+\index{RangePair@{RangePair}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{RangePair()}{RangePair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}}$\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Range\+Pair (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{lo1,  }\item[{int64\+\_\+t}]{hi1,  }\item[{int64\+\_\+t}]{lo2,  }\item[{int64\+\_\+t}]{hi2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_ae8eef1c942ee629396d5ac6730376468}\label{classbenchmark_1_1internal_1_1Benchmark_ae8eef1c942ee629396d5ac6730376468}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Ranges@{Ranges}}
+\index{Ranges@{Ranges}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Ranges()}{Ranges()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Ranges (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::pair$<$ int64\+\_\+t, int64\+\_\+t $>$ $>$ \&}]{ranges }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a8c0d150fe8b80b9ea81060ab5e2c7e24}\label{classbenchmark_1_1internal_1_1Benchmark_a8c0d150fe8b80b9ea81060ab5e2c7e24}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Repetitions@{Repetitions}}
+\index{Repetitions@{Repetitions}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Repetitions()}{Repetitions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Repetitions (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a995b0d6ba227885b0409a7e1a286fed6}\label{classbenchmark_1_1internal_1_1Benchmark_a995b0d6ba227885b0409a7e1a286fed6}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ReportAggregatesOnly@{ReportAggregatesOnly}}
+\index{ReportAggregatesOnly@{ReportAggregatesOnly}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ReportAggregatesOnly()}{ReportAggregatesOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Report\+Aggregates\+Only (\begin{DoxyParamCaption}\item[{bool}]{value = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_abad572c7d962a8b626829992cab23366}\label{classbenchmark_1_1internal_1_1Benchmark_abad572c7d962a8b626829992cab23366}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Run@{Run}}
+\index{Run@{Run}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily virtual void benchmark\+::internal\+::\+Benchmark\+::\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classbenchmark_1_1Fixture_aa77cd77903c529b4d287ca3657851765}{benchmark\+::\+Fixture}}, and \mbox{\hyperlink{classbenchmark_1_1internal_1_1FunctionBenchmark_a969e5921b907259d9e45844394226393}{benchmark\+::internal\+::\+Function\+Benchmark}}.
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a61ec1dece918a247317b3808ef9b608a}\label{classbenchmark_1_1internal_1_1Benchmark_a61ec1dece918a247317b3808ef9b608a}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!SetName@{SetName}}
+\index{SetName@{SetName}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void benchmark\+::internal\+::\+Benchmark\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a871ed1efb91da54cca4df492c7c8b316}\label{classbenchmark_1_1internal_1_1Benchmark_a871ed1efb91da54cca4df492c7c8b316}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Setup@{Setup}}
+\index{Setup@{Setup}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Setup()}{Setup()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Setup (\begin{DoxyParamCaption}\item[{void($\ast$)(const \mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&)}]{setup }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a5adf1135ca9dd10ebd61e59a358b6000}\label{classbenchmark_1_1internal_1_1Benchmark_a5adf1135ca9dd10ebd61e59a358b6000}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Teardown@{Teardown}}
+\index{Teardown@{Teardown}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Teardown()}{Teardown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Teardown (\begin{DoxyParamCaption}\item[{void($\ast$)(const \mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&)}]{teardown }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a1cd0207050adaf282f841611d44c2d02}\label{classbenchmark_1_1internal_1_1Benchmark_a1cd0207050adaf282f841611d44c2d02}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ThreadPerCpu@{ThreadPerCpu}}
+\index{ThreadPerCpu@{ThreadPerCpu}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ThreadPerCpu()}{ThreadPerCpu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Thread\+Per\+Cpu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_a19c286203e174f81a0cc2933312fd6e1}\label{classbenchmark_1_1internal_1_1Benchmark_a19c286203e174f81a0cc2933312fd6e1}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!ThreadRange@{ThreadRange}}
+\index{ThreadRange@{ThreadRange}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{ThreadRange()}{ThreadRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Thread\+Range (\begin{DoxyParamCaption}\item[{int}]{min\+\_\+threads,  }\item[{int}]{max\+\_\+threads }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_aaa3f1cde62b2ec57beb0552262e3f3bf}\label{classbenchmark_1_1internal_1_1Benchmark_aaa3f1cde62b2ec57beb0552262e3f3bf}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Threads@{Threads}}
+\index{Threads@{Threads}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Threads()}{Threads()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Threads (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_afc2e5f06dc44477c32841a06eb1699db}\label{classbenchmark_1_1internal_1_1Benchmark_afc2e5f06dc44477c32841a06eb1699db}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!Unit@{Unit}}
+\index{Unit@{Unit}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{Unit()}{Unit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacebenchmark_acb188ed33887da848831d42f32f70296}{Time\+Unit}}}]{unit }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_add023088c2c7a248c685cf70887d82e4}\label{classbenchmark_1_1internal_1_1Benchmark_add023088c2c7a248c685cf70887d82e4}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!UseManualTime@{UseManualTime}}
+\index{UseManualTime@{UseManualTime}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{UseManualTime()}{UseManualTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Use\+Manual\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_ab6f2a1002a46d6b946f949d12deadfd7}\label{classbenchmark_1_1internal_1_1Benchmark_ab6f2a1002a46d6b946f949d12deadfd7}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!UseRealTime@{UseRealTime}}
+\index{UseRealTime@{UseRealTime}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{UseRealTime()}{UseRealTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classbenchmark_1_1internal_1_1Benchmark}{Benchmark}} $\ast$ benchmark\+::internal\+::\+Benchmark\+::\+Use\+Real\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_aec4a1eb2b1fe7d35acebfdc65d6746c8}\label{classbenchmark_1_1internal_1_1Benchmark_aec4a1eb2b1fe7d35acebfdc65d6746c8}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!BenchmarkFamilies@{BenchmarkFamilies}}
+\index{BenchmarkFamilies@{BenchmarkFamilies}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{BenchmarkFamilies}{BenchmarkFamilies}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classbenchmark_1_1internal_1_1BenchmarkFamilies}{Benchmark\+Families}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classbenchmark_1_1internal_1_1Benchmark_acd4d57ec25420b534ff4aefc617149b2}\label{classbenchmark_1_1internal_1_1Benchmark_acd4d57ec25420b534ff4aefc617149b2}} 
+\index{benchmark::internal::Benchmark@{benchmark::internal::Benchmark}!BenchmarkInstance@{BenchmarkInstance}}
+\index{BenchmarkInstance@{BenchmarkInstance}!benchmark::internal::Benchmark@{benchmark::internal::Benchmark}}
+\doxysubsubsection{\texorpdfstring{BenchmarkInstance}{BenchmarkInstance}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classbenchmark_1_1internal_1_1BenchmarkInstance}{Benchmark\+Instance}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+build/\+\_\+deps/googlebenchmark-\/src/include/benchmark/\mbox{\hyperlink{benchmark_8h}{benchmark.\+h}}\item 
+build/\+\_\+deps/googlebenchmark-\/src/src/\mbox{\hyperlink{benchmark__register_8cc}{benchmark\+\_\+register.\+cc}}\end{DoxyCompactItemize}

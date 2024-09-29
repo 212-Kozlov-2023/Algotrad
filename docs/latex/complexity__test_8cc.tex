@@ -1,0 +1,315 @@
+\hypertarget{complexity__test_8cc}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/test/complexity\+\_\+test.cc File Reference}
+\label{complexity__test_8cc}\index{build/\_deps/googlebenchmark-\/src/test/complexity\_test.cc@{build/\_deps/googlebenchmark-\/src/test/complexity\_test.cc}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}benchmark/benchmark.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}output\+\_\+test.\+h\char`\"{}}\newline
+Include dependency graph for complexity\+\_\+test.\+cc\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{complexity__test_8cc_a37e7f0031a91e11317ee40d8f973d8e7}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}}(...)~  int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = Add\+Complexity\+Test(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{complexity__test_8cc_ab54f97a61617743c08ec3371879b706b}{BM\+\_\+\+Complexity\+\_\+\+O1}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&state)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a77bba5fa8e0326270e3a800c975ec505}{BENCHMARK}} (\mbox{\hyperlink{reporter__output__test_8cc_ab54f97a61617743c08ec3371879b706b}{BM\+\_\+\+Complexity\+\_\+\+O1}}) -\/$>$ \mbox{\hyperlink{complexity__test_8cc_a304ef3a36146235458064710015cc877}{Range}}(1, 1$<$$<$ 18) -\/$>$\mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ad9bd5247d41e5529223c43007304b9c0}{benchmark\+::o1}})
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a304ef3a36146235458064710015cc877}{Range}} (1, 1$<$$<$ 18) -\/$>$ \mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{[}$\,$\mbox{]}(\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{benchmark\+::\+Iteration\+Count}}) \{ return 1.\+0;\})
+\item 
+\mbox{\hyperlink{complexity__test_8cc_ad4456854ec12f9bb3e8738e99c1b3ba2}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a635313b18e6f06236b3d3819be9c2776}{enum\+\_\+big\+\_\+o\+\_\+1}}, 0)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_ab372bfc486bfa94079485d1bf6fd3b23}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a564afb79d242ee1b766ea5d15373762d}{auto\+\_\+big\+\_\+o\+\_\+1}}, 1)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_aaea935f9ca4f9b6003a40612dc4e86c1}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a9a2e884bfc1163fc73da5bf7e07617f6}{lambda\+\_\+big\+\_\+o\+\_\+1}}, 2)
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{complexity__test_8cc_ad7e2b6d3d8a71b55e7c03f4e8aef475e}{Construct\+Random\+Vector}} (int64\+\_\+t size)
+\item 
+void \mbox{\hyperlink{complexity__test_8cc_acfd9aa22e56d7a1d6206ba451b527a23}{BM\+\_\+\+Complexity\+\_\+\+O\+\_\+N}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&state)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a84ad5d4b1e80b2a2aa2acad3d7de0d9a}{Range\+Multiplier}} (2) -\/$>$ \mbox{\hyperlink{complexity__test_8cc_a304ef3a36146235458064710015cc877}{Range}}(1$<$$<$ 10, 1$<$$<$ 16) -\/$>$\mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ab865993b1b1c8cf734760b776f5e71f6}{benchmark\+::oN}})
+\item 
+\mbox{\hyperlink{complexity__test_8cc_ad34886af683c66d5bca122ff0c52da32}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}{n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}{big\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}{rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_aab0b91f2ef288d87ce9d35807ef3ca86}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n}}, 3)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_ac29623555381332eb9dbdb1366ce37b0}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}{n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}{big\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}{rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_ad130879ea8ba475ecf543edf9c51a61f}{lambda\+\_\+big\+\_\+o\+\_\+n}}, 4)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a8e61e3f18c93185fb0c9db85dc2d86a4}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}{n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}{big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}{rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a2db8a544cb0d445c9f4c5432119776d3}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}}, 6)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a75cbd58e37db55ae348ba5ad95ac3c34}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}{n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}{big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}{rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a03bbb5ac0b9ab8b10f1c634e22f3b964}{lambda\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}}, 7)
+\item 
+void \mbox{\hyperlink{complexity__test_8cc_a374ee4a64a671929bda636198b9ea717}{BM\+\_\+\+Complexity\+Capture\+Args}} (\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&state, int n)
+\item 
+\mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}} (\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ab865993b1b1c8cf734760b776f5e71f6}{benchmark\+::oN}}) -\/$>$ Ranges(\{\{1, 2\}, \{3, 4\}\})
+\item 
+\mbox{\hyperlink{complexity__test_8cc_ac477b4c3d372e7cd8adfdd007e34a47a}{ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES}} (\mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}, \mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}+\char`\"{}\+\_\+\+BigO\char`\"{}, complexity\+\_\+capture\+\_\+name+\char`\"{}\+\_\+\+RMS\char`\"{}, \char`\"{}N\char`\"{}, 9)
+\item 
+int \mbox{\hyperlink{complexity__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\+\_\+\+BigO\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\+\_\+\+RMS\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a635313b18e6f06236b3d3819be9c2776}{enum\+\_\+big\+\_\+o\+\_\+1}} = \char`\"{}\textbackslash{}\textbackslash{}(\mbox{[}0-\/9\mbox{]}+\textbackslash{}\textbackslash{})\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a564afb79d242ee1b766ea5d15373762d}{auto\+\_\+big\+\_\+o\+\_\+1}} = \char`\"{}(\textbackslash{}\textbackslash{}(\mbox{[}0-\/9\mbox{]}+\textbackslash{}\textbackslash{}))$\vert$(lgN)\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a9a2e884bfc1163fc73da5bf7e07617f6}{lambda\+\_\+big\+\_\+o\+\_\+1}} = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}{n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+N\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}{big\+\_\+o\+\_\+n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+\+BigO\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}{rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+\+RMS\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_aab0b91f2ef288d87ce9d35807ef3ca86}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n}} = \char`\"{}N\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_ad130879ea8ba475ecf543edf9c51a61f}{lambda\+\_\+big\+\_\+o\+\_\+n}} = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}{n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+N\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}{big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+\+N\+\_\+\+BigO\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}{rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}} = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+\+N\+\_\+\+RMS\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a2db8a544cb0d445c9f4c5432119776d3}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}} = \char`\"{}NlgN\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{complexity__test_8cc_a03bbb5ac0b9ab8b10f1c634e22f3b964}{lambda\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}} = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}
+\item 
+const std\+::string \mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{complexity__test_8cc_a37e7f0031a91e11317ee40d8f973d8e7}\label{complexity__test_8cc_a37e7f0031a91e11317ee40d8f973d8e7}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES}{ADD\_COMPLEXITY\_CASES}}
+{\footnotesize\ttfamily \#define ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~  int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = Add\+Complexity\+Test(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{complexity__test_8cc_ac477b4c3d372e7cd8adfdd007e34a47a}\label{complexity__test_8cc_ac477b4c3d372e7cd8adfdd007e34a47a}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}+\char`\"{}\+\_\+\+BigO\char`\"{}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}{complexity\+\_\+capture\+\_\+name}}+\char`\"{}\+\_\+\+RMS\char`\"{}}]{,  }\item[{\char`\"{}N\char`\"{}}]{,  }\item[{9}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a8e61e3f18c93185fb0c9db85dc2d86a4}\label{complexity__test_8cc_a8e61e3f18c93185fb0c9db85dc2d86a4}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}{n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}{big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}{rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a2db8a544cb0d445c9f4c5432119776d3}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}}}]{,  }\item[{6}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a75cbd58e37db55ae348ba5ad95ac3c34}\label{complexity__test_8cc_a75cbd58e37db55ae348ba5ad95ac3c34}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}{n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}{big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}{rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a03bbb5ac0b9ab8b10f1c634e22f3b964}{lambda\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n}}}]{,  }\item[{7}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ad34886af683c66d5bca122ff0c52da32}\label{complexity__test_8cc_ad34886af683c66d5bca122ff0c52da32}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}{n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}{big\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}{rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_aab0b91f2ef288d87ce9d35807ef3ca86}{enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n}}}]{,  }\item[{3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ac29623555381332eb9dbdb1366ce37b0}\label{complexity__test_8cc_ac29623555381332eb9dbdb1366ce37b0}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}{n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}{big\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}{rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_ad130879ea8ba475ecf543edf9c51a61f}{lambda\+\_\+big\+\_\+o\+\_\+n}}}]{,  }\item[{4}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ab372bfc486bfa94079485d1bf6fd3b23}\label{complexity__test_8cc_ab372bfc486bfa94079485d1bf6fd3b23}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a564afb79d242ee1b766ea5d15373762d}{auto\+\_\+big\+\_\+o\+\_\+1}}}]{,  }\item[{1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ad4456854ec12f9bb3e8738e99c1b3ba2}\label{complexity__test_8cc_ad4456854ec12f9bb3e8738e99c1b3ba2}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a635313b18e6f06236b3d3819be9c2776}{enum\+\_\+big\+\_\+o\+\_\+1}}}]{,  }\item[{0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_aaea935f9ca4f9b6003a40612dc4e86c1}\label{complexity__test_8cc_aaea935f9ca4f9b6003a40612dc4e86c1}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}}
+\index{ADD\_COMPLEXITY\_CASES@{ADD\_COMPLEXITY\_CASES}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ADD\_COMPLEXITY\_CASES()}{ADD\_COMPLEXITY\_CASES()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily ADD\+\_\+\+COMPLEXITY\+\_\+\+CASES (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}{one\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}{big\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}{rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name}}}]{,  }\item[{\mbox{\hyperlink{complexity__test_8cc_a9a2e884bfc1163fc73da5bf7e07617f6}{lambda\+\_\+big\+\_\+o\+\_\+1}}}]{,  }\item[{2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a77bba5fa8e0326270e3a800c975ec505}\label{complexity__test_8cc_a77bba5fa8e0326270e3a800c975ec505}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!BENCHMARK@{BENCHMARK}}
+\index{BENCHMARK@{BENCHMARK}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BENCHMARK()}{BENCHMARK()}}
+{\footnotesize\ttfamily BENCHMARK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{reporter__output__test_8cc_ab54f97a61617743c08ec3371879b706b}{BM\+\_\+\+Complexity\+\_\+\+O1}}}]{ }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{complexity__test_8cc_a304ef3a36146235458064710015cc877}{Range}}(1, 1$<$$<$ 18) -\/$>$\mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ad9bd5247d41e5529223c43007304b9c0}{benchmark\+::o1}})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ab54f97a61617743c08ec3371879b706b}\label{complexity__test_8cc_ab54f97a61617743c08ec3371879b706b}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!BM\_Complexity\_O1@{BM\_Complexity\_O1}}
+\index{BM\_Complexity\_O1@{BM\_Complexity\_O1}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BM\_Complexity\_O1()}{BM\_Complexity\_O1()}}
+{\footnotesize\ttfamily void BM\+\_\+\+Complexity\+\_\+\+O1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_acfd9aa22e56d7a1d6206ba451b527a23}\label{complexity__test_8cc_acfd9aa22e56d7a1d6206ba451b527a23}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!BM\_Complexity\_O\_N@{BM\_Complexity\_O\_N}}
+\index{BM\_Complexity\_O\_N@{BM\_Complexity\_O\_N}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BM\_Complexity\_O\_N()}{BM\_Complexity\_O\_N()}}
+{\footnotesize\ttfamily void BM\+\_\+\+Complexity\+\_\+\+O\+\_\+N (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{state }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a374ee4a64a671929bda636198b9ea717}\label{complexity__test_8cc_a374ee4a64a671929bda636198b9ea717}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!BM\_ComplexityCaptureArgs@{BM\_ComplexityCaptureArgs}}
+\index{BM\_ComplexityCaptureArgs@{BM\_ComplexityCaptureArgs}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{BM\_ComplexityCaptureArgs()}{BM\_ComplexityCaptureArgs()}}
+{\footnotesize\ttfamily void BM\+\_\+\+Complexity\+Capture\+Args (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classbenchmark_1_1State}{benchmark\+::\+State}} \&}]{state,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}\label{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!Complexity@{Complexity}}
+\index{Complexity@{Complexity}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{Complexity()}{Complexity()}}
+{\footnotesize\ttfamily Complexity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ab865993b1b1c8cf734760b776f5e71f6}{benchmark\+::oN}}}]{ }\end{DoxyParamCaption}) -\/$>$  Ranges(\{\{1, 2\}, \{3, 4\}\})}
+
+\mbox{\Hypertarget{complexity__test_8cc_ad7e2b6d3d8a71b55e7c03f4e8aef475e}\label{complexity__test_8cc_ad7e2b6d3d8a71b55e7c03f4e8aef475e}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!ConstructRandomVector@{ConstructRandomVector}}
+\index{ConstructRandomVector@{ConstructRandomVector}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{ConstructRandomVector()}{ConstructRandomVector()}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Construct\+Random\+Vector (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}\label{complexity__test_8cc_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!main@{main}}
+\index{main@{main}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a304ef3a36146235458064710015cc877}\label{complexity__test_8cc_a304ef3a36146235458064710015cc877}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!Range@{Range}}
+\index{Range@{Range}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{Range()}{Range()}}
+{\footnotesize\ttfamily Range (\begin{DoxyParamCaption}\item[{1}]{,  }\item[{1$<$$<$}]{18 }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{[}$\,$\mbox{]}(\mbox{\hyperlink{namespacebenchmark_ad962f9921a033f74a68077d811e15bed}{benchmark\+::\+Iteration\+Count}}) \{ return 1.\+0;\})}
+
+\mbox{\Hypertarget{complexity__test_8cc_a84ad5d4b1e80b2a2aa2acad3d7de0d9a}\label{complexity__test_8cc_a84ad5d4b1e80b2a2aa2acad3d7de0d9a}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!RangeMultiplier@{RangeMultiplier}}
+\index{RangeMultiplier@{RangeMultiplier}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{RangeMultiplier()}{RangeMultiplier()}}
+{\footnotesize\ttfamily Range\+Multiplier (\begin{DoxyParamCaption}\item[{2}]{ }\end{DoxyParamCaption}) -\/$>$  \mbox{\hyperlink{complexity__test_8cc_a304ef3a36146235458064710015cc877}{Range}}(1$<$$<$ 10, 1$<$$<$ 16) -\/$>$\mbox{\hyperlink{complexity__test_8cc_a64245398a8babd80afd9ff63221cfc65}{Complexity}}(\mbox{\hyperlink{namespacebenchmark_a24b75d2330a78a5e7dfdb577d4fb40b5ab865993b1b1c8cf734760b776f5e71f6}{benchmark\+::oN}})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{complexity__test_8cc_a564afb79d242ee1b766ea5d15373762d}\label{complexity__test_8cc_a564afb79d242ee1b766ea5d15373762d}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!auto\_big\_o\_1@{auto\_big\_o\_1}}
+\index{auto\_big\_o\_1@{auto\_big\_o\_1}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{auto\_big\_o\_1}{auto\_big\_o\_1}}
+{\footnotesize\ttfamily const char$\ast$ auto\+\_\+big\+\_\+o\+\_\+1 = \char`\"{}(\textbackslash{}\textbackslash{}(\mbox{[}0-\/9\mbox{]}+\textbackslash{}\textbackslash{}))$\vert$(lgN)\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}\label{complexity__test_8cc_a685c6bb574b56fd6063b7d9d0a8bac05}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!big\_o\_1\_test\_name@{big\_o\_1\_test\_name}}
+\index{big\_o\_1\_test\_name@{big\_o\_1\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{big\_o\_1\_test\_name}{big\_o\_1\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ big\+\_\+o\+\_\+1\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\+\_\+\+BigO\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}\label{complexity__test_8cc_a80a7665e93e1edc979a2c9e8b1910fe0}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!big\_o\_n\_lg\_n\_test\_name@{big\_o\_n\_lg\_n\_test\_name}}
+\index{big\_o\_n\_lg\_n\_test\_name@{big\_o\_n\_lg\_n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{big\_o\_n\_lg\_n\_test\_name}{big\_o\_n\_lg\_n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+\+N\+\_\+\+BigO\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}\label{complexity__test_8cc_a4da2715021251246ff2239d73ff39351}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!big\_o\_n\_test\_name@{big\_o\_n\_test\_name}}
+\index{big\_o\_n\_test\_name@{big\_o\_n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{big\_o\_n\_test\_name}{big\_o\_n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ big\+\_\+o\+\_\+n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+\+BigO\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}\label{complexity__test_8cc_a65b18c1a6c5e0fa824d8eaedc7def695}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!complexity\_capture\_name@{complexity\_capture\_name}}
+\index{complexity\_capture\_name@{complexity\_capture\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{complexity\_capture\_name}{complexity\_capture\_name}}
+{\footnotesize\ttfamily const std\+::string complexity\+\_\+capture\+\_\+name}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{    \textcolor{stringliteral}{"{}BM\_ComplexityCaptureArgs/capture\_test"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{complexity__test_8cc_aab0b91f2ef288d87ce9d35807ef3ca86}\label{complexity__test_8cc_aab0b91f2ef288d87ce9d35807ef3ca86}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!enum\_auto\_big\_o\_n@{enum\_auto\_big\_o\_n}}
+\index{enum\_auto\_big\_o\_n@{enum\_auto\_big\_o\_n}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{enum\_auto\_big\_o\_n}{enum\_auto\_big\_o\_n}}
+{\footnotesize\ttfamily const char$\ast$ enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n = \char`\"{}N\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a2db8a544cb0d445c9f4c5432119776d3}\label{complexity__test_8cc_a2db8a544cb0d445c9f4c5432119776d3}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!enum\_auto\_big\_o\_n\_lg\_n@{enum\_auto\_big\_o\_n\_lg\_n}}
+\index{enum\_auto\_big\_o\_n\_lg\_n@{enum\_auto\_big\_o\_n\_lg\_n}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{enum\_auto\_big\_o\_n\_lg\_n}{enum\_auto\_big\_o\_n\_lg\_n}}
+{\footnotesize\ttfamily const char$\ast$ enum\+\_\+auto\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n = \char`\"{}NlgN\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a635313b18e6f06236b3d3819be9c2776}\label{complexity__test_8cc_a635313b18e6f06236b3d3819be9c2776}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!enum\_big\_o\_1@{enum\_big\_o\_1}}
+\index{enum\_big\_o\_1@{enum\_big\_o\_1}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{enum\_big\_o\_1}{enum\_big\_o\_1}}
+{\footnotesize\ttfamily const char$\ast$ enum\+\_\+big\+\_\+o\+\_\+1 = \char`\"{}\textbackslash{}\textbackslash{}(\mbox{[}0-\/9\mbox{]}+\textbackslash{}\textbackslash{})\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a9a2e884bfc1163fc73da5bf7e07617f6}\label{complexity__test_8cc_a9a2e884bfc1163fc73da5bf7e07617f6}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!lambda\_big\_o\_1@{lambda\_big\_o\_1}}
+\index{lambda\_big\_o\_1@{lambda\_big\_o\_1}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{lambda\_big\_o\_1}{lambda\_big\_o\_1}}
+{\footnotesize\ttfamily const char$\ast$ lambda\+\_\+big\+\_\+o\+\_\+1 = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_ad130879ea8ba475ecf543edf9c51a61f}\label{complexity__test_8cc_ad130879ea8ba475ecf543edf9c51a61f}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!lambda\_big\_o\_n@{lambda\_big\_o\_n}}
+\index{lambda\_big\_o\_n@{lambda\_big\_o\_n}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{lambda\_big\_o\_n}{lambda\_big\_o\_n}}
+{\footnotesize\ttfamily const char$\ast$ lambda\+\_\+big\+\_\+o\+\_\+n = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a03bbb5ac0b9ab8b10f1c634e22f3b964}\label{complexity__test_8cc_a03bbb5ac0b9ab8b10f1c634e22f3b964}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!lambda\_big\_o\_n\_lg\_n@{lambda\_big\_o\_n\_lg\_n}}
+\index{lambda\_big\_o\_n\_lg\_n@{lambda\_big\_o\_n\_lg\_n}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{lambda\_big\_o\_n\_lg\_n}{lambda\_big\_o\_n\_lg\_n}}
+{\footnotesize\ttfamily const char$\ast$ lambda\+\_\+big\+\_\+o\+\_\+n\+\_\+lg\+\_\+n = \char`\"{}f\textbackslash{}\textbackslash{}(N\textbackslash{}\textbackslash{})\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}\label{complexity__test_8cc_a022b0016b7d2322fbde0f14ece0e8c34}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!n\_lg\_n\_test\_name@{n\_lg\_n\_test\_name}}
+\index{n\_lg\_n\_test\_name@{n\_lg\_n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{n\_lg\_n\_test\_name}{n\_lg\_n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+N\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}\label{complexity__test_8cc_a0571d5790a8e5a5284f093abdc65e1fd}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!n\_test\_name@{n\_test\_name}}
+\index{n\_test\_name@{n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{n\_test\_name}{n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+N\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}\label{complexity__test_8cc_a3ae82fd7e7a1e8b9694903d0dabd8e45}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!one\_test\_name@{one\_test\_name}}
+\index{one\_test\_name@{one\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{one\_test\_name}{one\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ one\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}\label{complexity__test_8cc_a74e9a108b60d10d488ef2689e4768390}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!rms\_o\_1\_test\_name@{rms\_o\_1\_test\_name}}
+\index{rms\_o\_1\_test\_name@{rms\_o\_1\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{rms\_o\_1\_test\_name}{rms\_o\_1\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ rms\+\_\+o\+\_\+1\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O1\+\_\+\+RMS\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}\label{complexity__test_8cc_a2d02c3f8024a39df4401c120b0475fcc}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!rms\_o\_n\_lg\_n\_test\_name@{rms\_o\_n\_lg\_n\_test\_name}}
+\index{rms\_o\_n\_lg\_n\_test\_name@{rms\_o\_n\_lg\_n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{rms\_o\_n\_lg\_n\_test\_name}{rms\_o\_n\_lg\_n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ rms\+\_\+o\+\_\+n\+\_\+lg\+\_\+n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+log\+\_\+\+N\+\_\+\+RMS\char`\"{}}
+
+\mbox{\Hypertarget{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}\label{complexity__test_8cc_a384a06271ecde5e4dbf57abe6cd6d532}} 
+\index{complexity\_test.cc@{complexity\_test.cc}!rms\_o\_n\_test\_name@{rms\_o\_n\_test\_name}}
+\index{rms\_o\_n\_test\_name@{rms\_o\_n\_test\_name}!complexity\_test.cc@{complexity\_test.cc}}
+\doxysubsubsection{\texorpdfstring{rms\_o\_n\_test\_name}{rms\_o\_n\_test\_name}}
+{\footnotesize\ttfamily const char$\ast$ rms\+\_\+o\+\_\+n\+\_\+test\+\_\+name = \char`\"{}BM\+\_\+\+Complexity\+\_\+\+O\+\_\+\+N\+\_\+\+RMS\char`\"{}}
+

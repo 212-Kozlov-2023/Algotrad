@@ -1,0 +1,292 @@
+\hypertarget{output__test_8h}{}\doxysection{build/\+\_\+deps/googlebenchmark-\/src/test/output\+\_\+test.h File Reference}
+\label{output__test_8h}\index{build/\_deps/googlebenchmark-\/src/test/output\_test.h@{build/\_deps/googlebenchmark-\/src/test/output\_test.h}}
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$initializer\+\_\+list$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../src/re.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}benchmark/benchmark.\+h\char`\"{}}\newline
+Include dependency graph for output\+\_\+test.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structTestCase}{Test\+Case}}
+\item 
+struct \mbox{\hyperlink{structResults}{Results}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})~\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}\#\#\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}}
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})~\mbox{\hyperlink{skip__with__error__test_8cc_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a04ac612b4456ef57752035929a56750a}{ADD\+\_\+\+CASES}}(...)~int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \+::\mbox{\hyperlink{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}}(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a83e38070b2eb5d814ad65aadb2baabdc}{SET\+\_\+\+SUBSTITUTIONS}}(...)~  int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \+::\mbox{\hyperlink{output__test__helper_8cc_a33fc10e7528ee8ffc298abf0faac1163}{Set\+Substitutions}}(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)
+\item 
+\#define \mbox{\hyperlink{output__test_8h_acdb29c7239dc124246ef979e29cec180}{CHECK\+\_\+\+BENCHMARK\+\_\+\+RESULTS}}(bm\+\_\+name\+\_\+pattern,  checker\+\_\+function)~  size\+\_\+t \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \mbox{\hyperlink{output__test__helper_8cc_aebe30f415f7ffc00a186fced9cf583f4}{Add\+Checker}}(bm\+\_\+name\+\_\+pattern, checker\+\_\+function)
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry,  getfn,  var\+\_\+type,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\#define \mbox{\hyperlink{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry,  getfn,  var\+\_\+type,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  eps\+\_\+factor)
+\item 
+\#define \mbox{\hyperlink{output__test_8h_ac341550fa7b0717d57cb0038068a5c46}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE}}(entry,  var\+\_\+type,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})~    \mbox{\hyperlink{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+As, var\+\_\+type, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a8a3bc4431e1f40d1ca26d27b64d944ad}{CHECK\+\_\+\+COUNTER\+\_\+\+VALUE}}(entry,  var\+\_\+type,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})~    \mbox{\hyperlink{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+Counter\+As, var\+\_\+type, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})
+\item 
+\#define \mbox{\hyperlink{output__test_8h_a8e1b30e5bb9e8bcc80c5fd302149dffd}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE}}(entry,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  eps\+\_\+factor)~    \mbox{\hyperlink{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+As, double, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}, eps\+\_\+factor)
+\item 
+\#define \mbox{\hyperlink{output__test_8h_af977dc62f3a4e3631d231257fb4659be}{CHECK\+\_\+\+FLOAT\+\_\+\+COUNTER\+\_\+\+VALUE}}(entry,  var\+\_\+name,  relationship,  \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  eps\+\_\+factor)~    \mbox{\hyperlink{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+Counter\+As, double, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}, eps\+\_\+factor)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::function$<$ void(\mbox{\hyperlink{structResults}{Results}} const  \&)$>$ \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25}{Match\+Rules}} \{ \mbox{\hyperlink{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25ac129ccc2f93d3de74e2de408df343290}{MR\+\_\+\+Default}}
+, \mbox{\hyperlink{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a6193174534052dca9b8710e7f771c20f}{MR\+\_\+\+Next}}
+, \mbox{\hyperlink{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a9e23ecdd82bce413ddf028f3c9d1b697}{MR\+\_\+\+Not}}
+ \}
+\item 
+enum \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}} \{ \newline
+\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea20fc2518d3ee2f390377e71296ae865d}{TC\+\_\+\+Console\+Out}}
+, \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea7067ca57135534eccf5223940b2b9396}{TC\+\_\+\+Console\+Err}}
+, \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaeadd5923f7e242ca8963a0ed851fa56e1a}{TC\+\_\+\+JSONOut}}
+, \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea30b028dad13238386f0d6a39b6995216}{TC\+\_\+\+JSONErr}}
+, \newline
+\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea9e9c4d69b94fad51c2871421fccd847c}{TC\+\_\+\+CSVOut}}
+, \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea0e8d6122d8cc6eddd3cefef59c8641b3}{TC\+\_\+\+CSVErr}}
+, \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea3f8f31722e9735863c16ec3853a4130d}{TC\+\_\+\+Num\+ID}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{output__test_8h_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}} (\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}} ID, std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structTestCase}{Test\+Case}} $>$ il)
+\item 
+int \mbox{\hyperlink{output__test_8h_a33fc10e7528ee8ffc298abf0faac1163}{Set\+Substitutions}} (std\+::initializer\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$ il)
+\item 
+void \mbox{\hyperlink{output__test_8h_a0621edafd66908003676aa6d9489befe}{Run\+Output\+Tests}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{output__test_8h_aa554257bad27ce458bb6fc09dd2087d5}{Substr\+Cnt}} (const std\+::string \&haystack, const std\+::string \&pat)
+\item 
+std\+::string \mbox{\hyperlink{output__test_8h_a55c52561adc6d6af725fd55e8fa440a4}{Get\+File\+Reporter\+Output}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+size\+\_\+t \mbox{\hyperlink{output__test_8h_aa960b52d658594359199730867d181ae}{Add\+Checker}} (const std\+::string \&bm\+\_\+name\+\_\+pattern, const \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}} \&fn)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{output__test_8h_a04ac612b4456ef57752035929a56750a}\label{output__test_8h_a04ac612b4456ef57752035929a56750a}} 
+\index{output\_test.h@{output\_test.h}!ADD\_CASES@{ADD\_CASES}}
+\index{ADD\_CASES@{ADD\_CASES}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{ADD\_CASES}{ADD\_CASES}}
+{\footnotesize\ttfamily \#define ADD\+\_\+\+CASES(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \+::\mbox{\hyperlink{output__test__helper_8cc_a70521f74adb9bd37e1ddaa7bb60e8688}{Add\+Cases}}(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+\mbox{\Hypertarget{output__test_8h_acdb29c7239dc124246ef979e29cec180}\label{output__test_8h_acdb29c7239dc124246ef979e29cec180}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_BENCHMARK\_RESULTS@{CHECK\_BENCHMARK\_RESULTS}}
+\index{CHECK\_BENCHMARK\_RESULTS@{CHECK\_BENCHMARK\_RESULTS}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_BENCHMARK\_RESULTS}{CHECK\_BENCHMARK\_RESULTS}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+BENCHMARK\+\_\+\+RESULTS(\begin{DoxyParamCaption}\item[{}]{bm\+\_\+name\+\_\+pattern,  }\item[{}]{checker\+\_\+function }\end{DoxyParamCaption})~  size\+\_\+t \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \mbox{\hyperlink{output__test__helper_8cc_aebe30f415f7ffc00a186fced9cf583f4}{Add\+Checker}}(bm\+\_\+name\+\_\+pattern, checker\+\_\+function)}
+
+\mbox{\Hypertarget{output__test_8h_a8a3bc4431e1f40d1ca26d27b64d944ad}\label{output__test_8h_a8a3bc4431e1f40d1ca26d27b64d944ad}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_COUNTER\_VALUE@{CHECK\_COUNTER\_VALUE}}
+\index{CHECK\_COUNTER\_VALUE@{CHECK\_COUNTER\_VALUE}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_COUNTER\_VALUE}{CHECK\_COUNTER\_VALUE}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+COUNTER\+\_\+\+VALUE(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{var\+\_\+type,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}} }\end{DoxyParamCaption})~    \mbox{\hyperlink{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+Counter\+As, var\+\_\+type, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})}
+
+\mbox{\Hypertarget{output__test_8h_af977dc62f3a4e3631d231257fb4659be}\label{output__test_8h_af977dc62f3a4e3631d231257fb4659be}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_FLOAT\_COUNTER\_VALUE@{CHECK\_FLOAT\_COUNTER\_VALUE}}
+\index{CHECK\_FLOAT\_COUNTER\_VALUE@{CHECK\_FLOAT\_COUNTER\_VALUE}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_FLOAT\_COUNTER\_VALUE}{CHECK\_FLOAT\_COUNTER\_VALUE}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+FLOAT\+\_\+\+COUNTER\+\_\+\+VALUE(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  }\item[{}]{eps\+\_\+factor }\end{DoxyParamCaption})~    \mbox{\hyperlink{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+Counter\+As, double, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}, eps\+\_\+factor)}
+
+\mbox{\Hypertarget{output__test_8h_a8e1b30e5bb9e8bcc80c5fd302149dffd}\label{output__test_8h_a8e1b30e5bb9e8bcc80c5fd302149dffd}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_FLOAT\_RESULT\_VALUE@{CHECK\_FLOAT\_RESULT\_VALUE}}
+\index{CHECK\_FLOAT\_RESULT\_VALUE@{CHECK\_FLOAT\_RESULT\_VALUE}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_FLOAT\_RESULT\_VALUE}{CHECK\_FLOAT\_RESULT\_VALUE}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  }\item[{}]{eps\+\_\+factor }\end{DoxyParamCaption})~    \mbox{\hyperlink{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}{CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+As, double, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}, eps\+\_\+factor)}
+
+\mbox{\Hypertarget{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}\label{output__test_8h_aae28be505e591e35c4ab4325c2a1835e}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_FLOAT\_RESULT\_VALUE\_IMPL@{CHECK\_FLOAT\_RESULT\_VALUE\_IMPL}}
+\index{CHECK\_FLOAT\_RESULT\_VALUE\_IMPL@{CHECK\_FLOAT\_RESULT\_VALUE\_IMPL}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_FLOAT\_RESULT\_VALUE\_IMPL}{CHECK\_FLOAT\_RESULT\_VALUE\_IMPL}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+FLOAT\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{getfn,  }\item[{}]{var\+\_\+type,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}},  }\item[{}]{eps\+\_\+factor }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{output__test_8h_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(BM\_CHECK\_FLOAT\_, relationship)                                  \(\backslash\)}
+\DoxyCodeLine{    (entry.getfn< var\_type >(var\_name), (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}), (eps\_factor) * (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})) << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} \(\backslash\)}
+\DoxyCodeLine{    << \_\_FILE\_\_ << \textcolor{stringliteral}{"{}:"{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}} << (entry).name << \textcolor{stringliteral}{"{}:\(\backslash\)n"{}}     \(\backslash\)}
+\DoxyCodeLine{    << \_\_FILE\_\_ << \textcolor{stringliteral}{"{}:"{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}}                              \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}expected ("{}} << \#var\_type << \textcolor{stringliteral}{"{})"{}} << (var\_name)                   \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}="{}} << (entry).getfn< var\_type >(var\_name)                       \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{} to be "{}} \#relationship \textcolor{stringliteral}{"{} to "{}} << (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}) << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}                \(\backslash\)}
+\DoxyCodeLine{    << \_\_FILE\_\_ << \textcolor{stringliteral}{"{}:"{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}}                              \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}with tolerance of "{}} << (eps\_factor) * (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})                   \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{} ("{}} << (eps\_factor)*100. << \textcolor{stringliteral}{"{}\%), "{}}                              \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}but delta was "{}} << ((entry).getfn< var\_type >(var\_name) -\/ (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})) \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{} ("{}} << (((entry).getfn< var\_type >(var\_name) -\/ (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}))         \(\backslash\)}
+\DoxyCodeLine{               /                                                        \(\backslash\)}
+\DoxyCodeLine{               ((\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}) > 1.e-\/5 || \mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}} < -\/1.e-\/5 ? \mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}} : 1.e-\/5)*100.) \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}\%)"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{output__test_8h_ac341550fa7b0717d57cb0038068a5c46}\label{output__test_8h_ac341550fa7b0717d57cb0038068a5c46}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_RESULT\_VALUE@{CHECK\_RESULT\_VALUE}}
+\index{CHECK\_RESULT\_VALUE@{CHECK\_RESULT\_VALUE}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_RESULT\_VALUE}{CHECK\_RESULT\_VALUE}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+RESULT\+\_\+\+VALUE(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{var\+\_\+type,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}} }\end{DoxyParamCaption})~    \mbox{\hyperlink{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}{CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL}}(entry, Get\+As, var\+\_\+type, var\+\_\+name, relationship, \mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})}
+
+\mbox{\Hypertarget{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}\label{output__test_8h_a1d88d4074c536e7805e716dffdea9d71}} 
+\index{output\_test.h@{output\_test.h}!CHECK\_RESULT\_VALUE\_IMPL@{CHECK\_RESULT\_VALUE\_IMPL}}
+\index{CHECK\_RESULT\_VALUE\_IMPL@{CHECK\_RESULT\_VALUE\_IMPL}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CHECK\_RESULT\_VALUE\_IMPL}{CHECK\_RESULT\_VALUE\_IMPL}}
+{\footnotesize\ttfamily \#define CHECK\+\_\+\+RESULT\+\_\+\+VALUE\+\_\+\+IMPL(\begin{DoxyParamCaption}\item[{}]{entry,  }\item[{}]{getfn,  }\item[{}]{var\+\_\+type,  }\item[{}]{var\+\_\+name,  }\item[{}]{relationship,  }\item[{}]{\mbox{\hyperlink{gmock-spec-builders__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}} }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \mbox{\hyperlink{output__test_8h_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(BM\_CHECK\_, relationship)                                        \(\backslash\)}
+\DoxyCodeLine{    (entry.getfn< var\_type >(var\_name), (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}})) << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}                \(\backslash\)}
+\DoxyCodeLine{    << \_\_FILE\_\_ << \textcolor{stringliteral}{"{}:"{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}} << (entry).name << \textcolor{stringliteral}{"{}:\(\backslash\)n"{}}     \(\backslash\)}
+\DoxyCodeLine{    << \_\_FILE\_\_ << \textcolor{stringliteral}{"{}:"{}} << \_\_LINE\_\_ << \textcolor{stringliteral}{"{}: "{}}                              \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}expected ("{}} << \#var\_type << \textcolor{stringliteral}{"{})"{}} << (var\_name)                   \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{}="{}} << (entry).getfn< var\_type >(var\_name)                       \(\backslash\)}
+\DoxyCodeLine{    << \textcolor{stringliteral}{"{} to be "{}} \#relationship \textcolor{stringliteral}{"{} to "{}} << (\mbox{\hyperlink{gmock-actions__test_8cc_ac4f474c82e82cbb89ca7c36dd52be0ed}{value}}) << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{output__test_8h_a2f18db18bca26cafa95e9719de4a41ef}\label{output__test_8h_a2f18db18bca26cafa95e9719de4a41ef}} 
+\index{output\_test.h@{output\_test.h}!CONCAT@{CONCAT}}
+\index{CONCAT@{CONCAT}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CONCAT}{CONCAT}}
+{\footnotesize\ttfamily \#define CONCAT(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  }\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}} }\end{DoxyParamCaption})~\mbox{\hyperlink{skip__with__error__test_8cc_a6686571cd8d511b7268f872d6dcc226a}{CONCAT2}}(\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}, \mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}})}
+
+\mbox{\Hypertarget{output__test_8h_a6686571cd8d511b7268f872d6dcc226a}\label{output__test_8h_a6686571cd8d511b7268f872d6dcc226a}} 
+\index{output\_test.h@{output\_test.h}!CONCAT2@{CONCAT2}}
+\index{CONCAT2@{CONCAT2}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{CONCAT2}{CONCAT2}}
+{\footnotesize\ttfamily \#define CONCAT2(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}},  }\item[{}]{\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}} }\end{DoxyParamCaption})~\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a6150e0515f7202e2fb518f7206ed97dc}{x}}\#\#\mbox{\hyperlink{gmock-matchers-containers__test_8cc_a39cb44155237f0205e0feb931d5acbed}{y}}}
+
+\mbox{\Hypertarget{output__test_8h_a83e38070b2eb5d814ad65aadb2baabdc}\label{output__test_8h_a83e38070b2eb5d814ad65aadb2baabdc}} 
+\index{output\_test.h@{output\_test.h}!SET\_SUBSTITUTIONS@{SET\_SUBSTITUTIONS}}
+\index{SET\_SUBSTITUTIONS@{SET\_SUBSTITUTIONS}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{SET\_SUBSTITUTIONS}{SET\_SUBSTITUTIONS}}
+{\footnotesize\ttfamily \#define SET\+\_\+\+SUBSTITUTIONS(\begin{DoxyParamCaption}\item[{}]{... }\end{DoxyParamCaption})~  int \mbox{\hyperlink{skip__with__error__test_8cc_a2f18db18bca26cafa95e9719de4a41ef}{CONCAT}}(\mbox{\hyperlink{register__benchmark__test_8cc_ad1cb86a7ea627baae733b31aec7f3ae2}{dummy}}, \+\_\+\+\_\+\+LINE\+\_\+\+\_\+) = \+::\mbox{\hyperlink{output__test__helper_8cc_a33fc10e7528ee8ffc298abf0faac1163}{Set\+Substitutions}}(\+\_\+\+\_\+\+VA\+\_\+\+ARGS\+\_\+\+\_\+)}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}\label{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}} 
+\index{output\_test.h@{output\_test.h}!ResultsCheckFn@{ResultsCheckFn}}
+\index{ResultsCheckFn@{ResultsCheckFn}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{ResultsCheckFn}{ResultsCheckFn}}
+{\footnotesize\ttfamily typedef std\+::function$<$void(\mbox{\hyperlink{structResults}{Results}} const\&)$>$ \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25}\label{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25}} 
+\index{output\_test.h@{output\_test.h}!MatchRules@{MatchRules}}
+\index{MatchRules@{MatchRules}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{MatchRules}{MatchRules}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25}{Match\+Rules}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MR\_Default@{MR\_Default}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!MR\_Default@{MR\_Default}}}\mbox{\Hypertarget{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25ac129ccc2f93d3de74e2de408df343290}\label{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25ac129ccc2f93d3de74e2de408df343290}} 
+MR\+\_\+\+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MR\_Next@{MR\_Next}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!MR\_Next@{MR\_Next}}}\mbox{\Hypertarget{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a6193174534052dca9b8710e7f771c20f}\label{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a6193174534052dca9b8710e7f771c20f}} 
+MR\+\_\+\+Next&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MR\_Not@{MR\_Not}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!MR\_Not@{MR\_Not}}}\mbox{\Hypertarget{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a9e23ecdd82bce413ddf028f3c9d1b697}\label{output__test_8h_af33c2dc45c5f0a0b9f8b7d672ec66c25a9e23ecdd82bce413ddf028f3c9d1b697}} 
+MR\+\_\+\+Not&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}} 
+\index{output\_test.h@{output\_test.h}!TestCaseID@{TestCaseID}}
+\index{TestCaseID@{TestCaseID}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{TestCaseID}{TestCaseID}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_ConsoleOut@{TC\_ConsoleOut}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_ConsoleOut@{TC\_ConsoleOut}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea20fc2518d3ee2f390377e71296ae865d}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea20fc2518d3ee2f390377e71296ae865d}} 
+TC\+\_\+\+Console\+Out&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_ConsoleErr@{TC\_ConsoleErr}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_ConsoleErr@{TC\_ConsoleErr}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea7067ca57135534eccf5223940b2b9396}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea7067ca57135534eccf5223940b2b9396}} 
+TC\+\_\+\+Console\+Err&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_JSONOut@{TC\_JSONOut}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_JSONOut@{TC\_JSONOut}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaeadd5923f7e242ca8963a0ed851fa56e1a}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaeadd5923f7e242ca8963a0ed851fa56e1a}} 
+TC\+\_\+\+JSONOut&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_JSONErr@{TC\_JSONErr}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_JSONErr@{TC\_JSONErr}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea30b028dad13238386f0d6a39b6995216}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea30b028dad13238386f0d6a39b6995216}} 
+TC\+\_\+\+JSONErr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_CSVOut@{TC\_CSVOut}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_CSVOut@{TC\_CSVOut}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea9e9c4d69b94fad51c2871421fccd847c}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea9e9c4d69b94fad51c2871421fccd847c}} 
+TC\+\_\+\+CSVOut&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_CSVErr@{TC\_CSVErr}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_CSVErr@{TC\_CSVErr}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea0e8d6122d8cc6eddd3cefef59c8641b3}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea0e8d6122d8cc6eddd3cefef59c8641b3}} 
+TC\+\_\+\+CSVErr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TC\_NumID@{TC\_NumID}!output\_test.h@{output\_test.h}}\index{output\_test.h@{output\_test.h}!TC\_NumID@{TC\_NumID}}}\mbox{\Hypertarget{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea3f8f31722e9735863c16ec3853a4130d}\label{output__test_8h_a4f47d8cc17db1b585511e6316528cfaea3f8f31722e9735863c16ec3853a4130d}} 
+TC\+\_\+\+Num\+ID&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{output__test_8h_a70521f74adb9bd37e1ddaa7bb60e8688}\label{output__test_8h_a70521f74adb9bd37e1ddaa7bb60e8688}} 
+\index{output\_test.h@{output\_test.h}!AddCases@{AddCases}}
+\index{AddCases@{AddCases}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{AddCases()}{AddCases()}}
+{\footnotesize\ttfamily int Add\+Cases (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{output__test_8h_a4f47d8cc17db1b585511e6316528cfae}{Test\+Case\+ID}}}]{ID,  }\item[{std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{structTestCase}{Test\+Case}} $>$}]{il }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test_8h_aa960b52d658594359199730867d181ae}\label{output__test_8h_aa960b52d658594359199730867d181ae}} 
+\index{output\_test.h@{output\_test.h}!AddChecker@{AddChecker}}
+\index{AddChecker@{AddChecker}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{AddChecker()}{AddChecker()}}
+{\footnotesize\ttfamily size\+\_\+t Add\+Checker (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{bm\+\_\+name\+\_\+pattern,  }\item[{const \mbox{\hyperlink{output__test_8h_a0c67a79e41d122d41a41d3ae7a54a958}{Results\+Check\+Fn}} \&}]{fn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test_8h_a55c52561adc6d6af725fd55e8fa440a4}\label{output__test_8h_a55c52561adc6d6af725fd55e8fa440a4}} 
+\index{output\_test.h@{output\_test.h}!GetFileReporterOutput@{GetFileReporterOutput}}
+\index{GetFileReporterOutput@{GetFileReporterOutput}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{GetFileReporterOutput()}{GetFileReporterOutput()}}
+{\footnotesize\ttfamily std\+::string Get\+File\+Reporter\+Output (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test_8h_a0621edafd66908003676aa6d9489befe}\label{output__test_8h_a0621edafd66908003676aa6d9489befe}} 
+\index{output\_test.h@{output\_test.h}!RunOutputTests@{RunOutputTests}}
+\index{RunOutputTests@{RunOutputTests}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{RunOutputTests()}{RunOutputTests()}}
+{\footnotesize\ttfamily void Run\+Output\+Tests (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test_8h_a33fc10e7528ee8ffc298abf0faac1163}\label{output__test_8h_a33fc10e7528ee8ffc298abf0faac1163}} 
+\index{output\_test.h@{output\_test.h}!SetSubstitutions@{SetSubstitutions}}
+\index{SetSubstitutions@{SetSubstitutions}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{SetSubstitutions()}{SetSubstitutions()}}
+{\footnotesize\ttfamily int Set\+Substitutions (\begin{DoxyParamCaption}\item[{std\+::initializer\+\_\+list$<$ std\+::pair$<$ std\+::string, std\+::string $>$$>$}]{il }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{output__test_8h_aa554257bad27ce458bb6fc09dd2087d5}\label{output__test_8h_aa554257bad27ce458bb6fc09dd2087d5}} 
+\index{output\_test.h@{output\_test.h}!SubstrCnt@{SubstrCnt}}
+\index{SubstrCnt@{SubstrCnt}!output\_test.h@{output\_test.h}}
+\doxysubsubsection{\texorpdfstring{SubstrCnt()}{SubstrCnt()}}
+{\footnotesize\ttfamily int Substr\+Cnt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{haystack,  }\item[{const std\+::string \&}]{pat }\end{DoxyParamCaption})}
+
