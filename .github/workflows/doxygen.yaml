@@ -7,7 +7,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write
+  contents: write 
 
 jobs:
   generate-docs:
@@ -17,8 +17,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Install Doxygen
-      run: sudo apt-get install -y doxygen graphviz
+    - name: Install Doxygen and Graphviz
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y doxygen graphviz
+
+    - name: Generate Doxygen configuration file (if not exists)
+      run: |
+        if [ ! -f Doxyfile ]; then
+          doxygen -g
+        fi
 
     - name: Generate Documentation
       run: doxygen Doxyfile
@@ -28,8 +36,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/html 
-        publish_branch: gh-pages 
-        force_orphan: true  
+        publish_dir: ./docs/html
+        publish_branch: gh-pages
+        force_orphan: true
 
 
