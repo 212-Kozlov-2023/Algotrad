@@ -7,7 +7,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   generate-docs:
@@ -28,7 +28,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/html
+        publish_dir: ./docs/html 
         publish_branch: gh-pages 
-        force_orphan: true
+        force_orphan: true  
+
 
