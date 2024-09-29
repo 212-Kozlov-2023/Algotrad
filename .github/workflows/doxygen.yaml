@@ -7,7 +7,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write  # Разрешаем запись в репозиторий
+  contents: write 
 
 jobs:
   generate-docs:
@@ -29,6 +29,6 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/html
-        publish_branch: gh-pages  # Указываем, что нужно пушить в ветку gh-pages
-        force_orphan: true  # Создаёт ветку, если её нет
+        publish_branch: gh-pages 
+        force_orphan: true
 
