@@ -1,5 +1,0 @@
-\label{_interleaving}%
-\hypertarget{md_build__deps_googlebenchmark_src_docs_random_interleaving_autotoc_md21}{}\doxysection{Random Interleaving}\label{md_build__deps_googlebenchmark_src_docs_random_interleaving_autotoc_md21}
-\href{https://github.com/google/benchmark/issues/1051}{\texttt{ Random Interleaving}} is a technique to lower run-\/to-\/run variance. It randomly interleaves repetitions of a microbenchmark with repetitions from other microbenchmarks in the same benchmark test. Data shows it is able to lower run-\/to-\/run variance by \href{https://github.com/google/benchmark/issues/1051}{\texttt{ 40\%}} on average.
-
-To use, you mainly need to set {\ttfamily -\/-\/benchmark\+\_\+enable\+\_\+random\+\_\+interleaving=true}, and optionally specify non-\/zero repetition count {\ttfamily -\/-\/benchmark\+\_\+repetitions=9} and optionally decrease the per-\/repetition time {\ttfamily -\/-\/benchmark\+\_\+min\+\_\+time=0.\+1}. 
