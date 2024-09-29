@@ -7,6 +7,7 @@ add_executable(main main.cpp my_add.cpp)
 
 include(FetchContent)
 
+# GoogleTest
 FetchContent_Declare(
     googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
@@ -29,5 +30,6 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googlebenchmark)
 
-add_executable(benchmark benchmark_add.cpp my_add.cpp)
-target_link_libraries(benchmark benchmark::benchmark)
+add_executable(my_benchmark benchmark_add.cpp my_add.cpp)
+target_link_libraries(my_benchmark benchmark::benchmark)
+
