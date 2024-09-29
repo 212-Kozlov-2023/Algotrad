@@ -3,11 +3,11 @@ name: Generate and Publish Doxygen Documentation
 on:
   push:
     branches:
-      - main 
+      - main
   pull_request:
 
 permissions:
-  contents: write 
+  contents: write
 
 jobs:
   generate-docs:
@@ -31,6 +31,9 @@ jobs:
     - name: Generate Documentation
       run: doxygen Doxyfile
 
+    - name: Disable Jekyll (to ensure all files are published)
+      run: touch ./docs/html/.nojekyll
+
     - name: Deploy Documentation to GitHub Pages
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v4
@@ -39,5 +42,6 @@ jobs:
         publish_dir: ./docs/html
         publish_branch: gh-pages
         force_orphan: true
+
 
 
